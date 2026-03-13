@@ -1,0 +1,535 @@
+
+
+
+**BILET № 2**
+
+1. **Ishchi balandlikda ishlashga ruxsat olish uchun nima va qanday o'tishi kerak?**
+
+Javob: Balandlikda ishlashda mehnatni muhofaza qilish qoidalariga ko'ra (O'zbekiston Respublikasi Vazirlar Mahkamasi qarori № 555, 12.09.2016):
+- Tibbiy ko'rikdan o'tish (ishga qabul qilinganda va davriy ravishda — yilda 1 marta);
+- Mehnatni muhofaza qilish bo'yicha o'quv kursini o'tish va balandlikda ishlash qoidalarini bilish bo'yicha tekshiruvdan o'tish;
+- Balandlikda ishlash qoidalarini bilish bo'yicha imtihondan muvaffaqiyatli o'tish;
+- Balandlikda ishlash huquqi uchun guvohnoma olish (elektr o'rnatmalari bilan ishlashda elektr xavfsizligi guruhi);
+- Ish joyida to'g'ridan-to'g'ri maqsadli instruktajdan o'tish;
+- Tajribali ishchi nazorati ostida ish joyida stajirovka o'tish (yangi ishchilar uchun).
+
+---
+
+2. **Qanday ishlar balandlikda bajarilgan hisoblanadi?**
+
+Javob: Balandlikda ishlash — bu ishchining 1,5 m va undan yuqori balandlikdagi chegaralanmagan balandlik farqlaridan 2 m dan yaqin masofada yoki yer yuzasi, pol, ish joyidan 1,5 m va undan yuqori balandlikda joylashgan maydonchalarda ishlashi bilan bajariladigan ishlar.
+
+---
+
+3. **Balandlikda ishlarni bajarishda qanday xavfli va zararli omillar ta'sir qilishi mumkin?**
+
+Javob:
+- Xavfli omillar: balandlikdan tushish; buyumlar, asbob-uskunalar tushishi; elektr toki urishi; iskala, podmostlarning uzilishi; narvonlarning ag'darilishi, yetarli yoritishmaslik; shamol (tezligi 10-12 m/s dan yuqori — ochiq havoda ishlash taqiqlanadi), muzlamalar, yomg'ir, momaqaldiroq, qor, do'l, tuman, sirpanchiq, harakatlanuvchi mexanizmlar, transport.
+- Zararli omillar: tebranish, shovqin, changlanish, gazlanish, nurlanish.
+
+---
+
+4. **Balandlikda ishlashda qanday yordamchi uskunalar qo'llaniladi? Bu uskunalarga qanday talablar qo'yiladi?**
+
+Javob: Yordamchi uskunalar: narvonlar, zinapoya, podmostlar, iskala, lyulka, sug'urta kamarlari, arqonlar, montyor tirmoqlari.
+
+Talablar:
+- Ishqobiliyat, ko'rinadigan nuqsonlarsiz bo'lishi;
+- Oxirgi sinov sanasi va keyingi sinov sanasi ko'rsatilgan belgichaning mavjudligi (125 kg vazn bilan 5 daqiqa davomida zinapoyada sinash);
+- Jadvalga ko'ra sinovlar (metall narvonlar — 12 oyda 1 marta, yog'och narvonlar — 6 oyda 1 marta);
+- Tayanchlarda sirpanchiqga qarshi uchlar yoki rezina qoplamalar.
+
+---
+
+5. **Siniqda birinchi yordam qanday ko'rsatiladi?**
+
+Javob:
+- Zararlangan a'zoni keraksiz holda tegmang;
+- Shina yoki yordamchi vositalar (tayoq, reyka) yordamida zararlangan tananing qismini harakatsizlantiring (immobilizatsiya);
+- Ochiq siniqda — yara ustiga steril bog'ich qo'ying;
+- Qon ketishda — qonni to'xtating (jigarrang, bosuvchi bog'ich);
+- Og'riq qoldiruvchi dori bering;
+- Tez tibbiy yordam chaqiring.
+
+---
+
+6. **Yong'indan himoya qilish vositalarining turlarini ayting.**
+
+Javob:
+- Birlamchi: yong'in mashinasi, gidrantlar, yong'in kranlari, o't o'chirgichlar (changli, uglerodli), asbob-uskunalar to'plami bilan yong'in qalqonlari, qum, asbest matolari.
+- Stasionar: avtomatik yong'in o'chirish o'rnatmalari, yong'in signalizatsiyasi, sprinkler tizimlari, yong'in gidrantlari.
+
+---
+
+**BILET № 4**
+
+1. **Qanday hollarda qoidalar yoki ko'rsatmalar bilish bo'yicha navbatdan tashqari tekshiruv o'tkaziladi?**
+
+Javob: Navbatdan tashqari tekshiruv o'tkaziladi:
+- Texnologik jarayon o'zgarganda, uskuna almashtirilganda;
+- Ishchi mehnatni muhofaza qilish talablarini buzganida;
+- Davlat nazorati organlari vakolatli shaxslar talabiga ko'ra;
+- Ishda 6 oydan ortiq tanaffusdan so'ng;
+- Avariya, texnika xavfsizligi qoidalarini buzish yoki ishchining aybi bilan baxtsiz hodisadan so'ng;
+- Boshqa bo'limga yoki boshqa lavozimga o'tkazilganda.
+
+---
+
+2. **Himoya kaskalarini saqlash va foydalanish kafolat muddatlarini ayting.**
+
+Ushlanmay qolmaguncha yoki shikastlanmaguncha.
+
+---
+
+3. **Balandlikda ishlashda ishchi asbob-uskunalarni tashish va saqlash uchun nima bo'lishi kerak?**
+
+- Yelkada sumka, ryukzak yoki belga mahkamlangan asbob-uskunalar sumkasi;
+- Qopqoqli mayda detallar uchun konteynerlar;
+- Asbob-uskuna arqon bilan belga yoki konstruksiyaga bog'langan bo'lishi kerak (tushib ketishdan himoya);
+- Asbob-uskunani kiyim cho'ntaklarida ushlab turish yoki "osib" uzatish taqiqlanadi.
+
+---
+
+4. **Yuqori platformasiz ko'chma narvonlar va zinapoyalarda qanday ishlar taqiqlanadi?**
+
+Javob: Taqiqlanadi:
+- Elektr asbob-uskunalaridan foydalanish bilan ishlash;
+- 5 kg dan ortiq yuk bilan ishlash;
+- Katta kuch talab qiluvchi ishlar (mix urish, burg'ulash);
+- Sug'urta kamarisiz 1,5 m dan yuqori balandlikda ishlash;
+- Ishchining zinapoya yuqori pog'onasida joylashishi bilan ishlash.
+
+---
+
+5. **Yong'in kelib chiqishining mumkin bo'lgan sabablarini ayting.**
+
+Javob:
+- Nosoz elektr simlari, izolyatsiya shikastlanishi, ortiqcha yuklanish, qisqa tutashuv;
+- Olov bilan ehtiyotsiz muomala;
+- Taqiqlangan joyda chekilish;
+- Payvandlash ishlari paytida uchqunlar;
+- Uskunaning ortiqcha qizishi;
+- Moyalarning, bo'yoqlarning, erituvchilarning o'z-o'zidan yonishi;
+- Yonuvchan materiallarni saqlash qoidalarini buzish;
+- Chaqmoq, statik elektr.
+
+---
+
+6. **Pulsizlikda jabr ko'rgan yordam qanday ko'rsatiladi?**
+
+Javob: Darhol yurak-o'pka reanimatsiyasini (SLR) boshlang:
+- Jabr ko'rganni qattiq yuzaga yotqizing;
+- Ko'krak qafasiga bilvosita yurak massajini boshlang (ko'krakka 30 bosish, chuqurligi 5-6 sm, tezligi daqiqada 100-120);
+- Har 30 bosishdan keyin 2 marta "og'izdan-og'izga" sun'iy nafas o'tkazing;
+- Tez yordam kelishi yoki puls tiklanmaguncha reanimatsiyani to'xtatmang;
+- Tez yordam chaqiring (yoki buni boshqa shaxsga topshiring).
+
+---
+
+**BILET № 6**
+
+1. **Kuchlanish ostida bo'lgan elektr simlari yoki elektr o'rnatmalari yaqinida balandlikda ishlashdan oldin nima qilish kerak?**
+
+Javob:
+- Ishlarni bajarish uchun ruxsatnoma olish;
+- Xavfsiz masofani saqlab bo'lmasa, elektr o'rnatmasini o'chirish (o'zgartirishni rasmiylashtirish).
+- Xavfsiz masofalarni saqlashga ishonch hosil qilish (1 kV gacha VL uchun — kamida 0,6 m, 10 kV gacha — 0,6 m, 35 kV gacha — 1 m, 110 kV gacha — 1,5 m);
+- "To'xta! Hayot uchun xavfli" yozuvli belgilar bilan vaqtinchalik to'siqlar o'rnatish;
+- Dielektrik himoya vositalaridan (qo'lqoplar, etiklar, izolyatsiyali dastalik asbob-uskunalar) foydalanish;
+
+---
+
+2. **Yog'och va metall narvonlar qancha muddatda tekshirilishi va sinashdan o'tkazilishi kerak?**
+
+Javob:
+- Yog'och narvonlar: vizual ko'rik — har foydalanishdan oldin; sinovlar — 6 oyda 1 marta.
+- Metall narvonlar: ko'rik — har foydalanishdan oldin; sinovlar — 12 oyda 1 marta.
+- Sinovlar o'rta pog'onaga 125 kg statik yuk qo'yish orqali o'tkaziladi.
+
+---
+
+3. **Balandlikda bajariladigan ishlab chiqarish jarayoniga qanday talablar qo'yiladi?**
+
+Javob:
+- Balandlikda ishlash uchun ruxsatnomaning mavjudligi;
+- Vositalar bilan ta'minlash (iskala, podmostlar, lyulkalar);
+- Sug'urta tizimlaridan foydalanish (sug'urta kamarlari, arqonlar, sug'urta chiziqlari);
+- Yomon ob-havoda ishlashni taqiqlash (shamol 10-12 m/s dan yuqori, muzlamalar, tuman, yomg'ir);
+- Yer ustidagi ishchilar bilan aloqa ta'minlash;
+- Instruktaj va ishlar bo'yicha navbatchining mavjudligi.
+
+---
+
+4. **Shaxsiy himoya vositalariga qanday talablar qo'yiladi?**
+
+Javob:
+- GOST va TUga muvofiqligi;
+- Ishqobiliyati, mexanik shikastlanishlarsiz bo'lishi;
+- Davriy sinovdan o'tish (sug'urta kamarlari — 6 oyda 1 marta);
+- To'g'ri saqlash (quruq xonada, aggressive muhit ta'siridan himoyalangan);
+- Ishlab chiqarish va sinov sanalarini ko'rsatuvchi belgilanish;
+- Faqat maqsadiga muvofiq foydalanish.
+
+---
+
+5. **Iskala va podmostlardagi yopishqoqlarga qanday talablar qo'yiladi?**
+
+Javob:
+- Yopishqoqlar 40 mm dan kam bo'lmagan qalinlikdagi butun taxtalardan bo'lishi kerak;
+- O'tish uchun yopishqog'ining kengligi kamida 1 m, ishlash uchun — 1,5 m;
+- Yopishqoqlar 2,5 mm dan ortiq bo'shliqlarsiz zich yotqizilishi kerak;
+- Yopishqoqlar chetlari ustunlardan kamida 200 mm chiqib turishi kerak;
+- Chegaralashning mavjudligi (1,1 m balandlikdagi panjaralar, o'rta planka, 15 sm balandlikdagi bortli qalqon);
+- Yopishqoqlar iskalaga mahkamlangan bo'lishi kerak.
+
+---
+
+**BILET № 7**
+
+1. **Elektr toki urishi natijasida baxtsiz hodisalar uchun kim javobgar?**
+
+Javob:
+- Ishchi — texnika xavfsizligi qoidalarini buzish, o'z-o'zidan harakatlar uchun;
+- Ish beruvchi — mehnatni muhofaza qilish talablarini buzish, SHXV bilan ta'minlamaslik, instruktajlarsizlik uchun;
+- Tashkiliy va texnik chora-tadbirlarni ta'minlamaganlar;
+- Ishlar rahbari (usta) — ish texnologiyasini buzish, ruxsatnomalarsizlik uchun;
+- Vakolatli shaxslar — nazorat organlari talablarini buzishda.
+
+---
+
+2. **Narvonlar va zinapoyalar holatini kim nazorat qiladi?**
+
+Javob: Nazoratni o'tkazadilar:
+- Usta, ishlar ijrochisi — ishchilarga topshirishdan oldin;
+- Mehnatni muhofaza qilish bo'yicha mutaxassis — davriy nazorat;
+- Komissiya — oylik ko'rik va yillik sinovlar (akt tuziladi);
+- Ishchi — har foydalanishdan oldin (vizual ko'rik).
+
+---
+
+3. **Balandlikda ishlashda qanday xavfli va zararli ishlab chiqarish omillari ta'sir qilishi mumkin?**
+
+Javob: 
+- Xavfli omillar: balandlikdan tushish; buyumlar, asbob-uskunalar tushishi; elektr toki urishi; iskala, podmostlarning uzilishi; narvonlarning ag'darilishi, yetarli yoritishmaslik; shamol (tezligi 10-12 m/s dan yuqori — ochiq havoda ishlash taqiqlanadi), muzlamalar, yomg'ir, momaqaldiroq, qor, do'l, tuman, sirpanchiq, harakatlanuvchi mexanizmlar, transport.
+- Zararli omillar: tebranish, shovqin, changlanish, gazlanish, nurlanish.
+
+---
+
+4. **Montyor tirmoqlari bilan ko'tarilishda qanday xavfsizlik talablari saqlanishi kerak?**
+
+Javob:
+- Tirmoqlarni sinash — 6 oyda 1 marta;
+- Dielektrik qo'lqoplar va etiklar kiyish;
+- Ko'tarilishdan oldin tirmoqlarning ishqobiliyatini tekshirish;
+- Sug'urta kamarini tirmoqlardan yuqoriga mahkamlash;
+- Ko'tarishni "qadamma-qadam" amalga oshirish, ikkala tirmoqni bir vaqtda ko'chirish;
+- Muzlamalar, yomg'ir, shamol 10 m/s dan yuqori bo'lganda tirmoqlar bilan ishlash taqiqlanadi;
+- Asbob-uskunani tayanchlarda qoldirish taqiqlanadi.
+
+---
+
+5. **Jabr ko'rganni elektr toki ta'siridan qanday ozod qilish kerak?**
+
+Javob:
+- Elektr o'rnatmasini o'chirish (rubilnik, avtomat);
+- Agar o'chirish mumkin bo'lmasa — quruq kiyimidan tortib olish;
+- Dielektrik qo'lqoplar, quruq yog'och tayoq, taxta ishlatish;
+- Metall qismlarga va jabr ko'rganning tanasiga yalang'och qo'llar bilan tegmang;
+- Yuqori kuchlanishda — masofani saqlang (qadam kuchlanishi).
+
+---
+
+6. **Yong'in xavfsizligi qoidalarini buzishlar aniqlanganda ishchilar va xizmatchilarning harakatlari?**
+
+Javob:
+- Darhol bevosita rahbar yoki yong'in xavfsizligi uchun javobgar shaxsga xabar berish;
+- (Agar bu xavfsiz bo'lsa) buzishni bartaraf etish choralari qabul qilish;
+- Yonish aniqlanganda — darhol yong'in xavfsizligiga xabar berish (101), mavjud vositalar bilan o'chirishni boshlash;
+- Yong'in tarqalishi xavfi bo'lganda odamlarni evakuatsiya qilish;
+- Jabr ko'rganlarga birinchi yordam ko'rsatish.
+
+---
+
+**BILET № 8**
+
+1. **Xavfsizlik belgilari va vaqtinchalik to'siqlar qanday signal ranglarga bo'yalishi kerak?**
+
+Javob: 
+- Qizil — taqiqlovchi belgilar, yong'in xavfsizligi;
+- Sariq (to'q sariq) — ogohlantiruvchi belgilar, vaqtinchalik to'siqlar;
+- Yashil — buyuruvchi belgilar, xavfsiz yo'nalish ko'rsatkichlari;
+- Ko'k — ko'rsatuvchi belgilar;
+- Qora-oq yoki qizil-oq yo'lak — xavfli zonalarni chegaralash.
+
+---
+
+2. **Zinapoyalardan foydalanishda balandlikda ishlashni boshlashdan oldin nima qilish kerak?**
+
+Javob:
+- Zinapoyaning vizual ko'rigini o'tkazish (yoriqlar, nuqsonlarsizlik);
+- Sharnirlar, sug'urta zanjiri, uchlarining ishqobiliyatini tekshirish;
+- Barqarorlikka ishonch hosil qilish (tayanchlarni to'liq chiqarish, mahkamlash);
+- Tekis, qattiq yuzaga o'rnatish;
+- 1,5 m dan yuqori ishlashda — sug'urta kamarini kiyish va mahkamlash;
+- Ishlar rahbarining og'zaki yoki yozma ruxsatini olish.
+
+---
+
+3. **Balandlikda ishlab chiqarish ishlarini tugatganda montyor-ishchi nima qilishi kerak?**
+
+- Asbob-uskuna, materiallar, axlatni yig'ish;
+- Sug'urta jihozlarini topshirish, ularning ishqobiliyatini tekshirish;
+- Vaqtinchalik to'siqlarni olib tashlash;
+- Ruxsatnomada ishni tugatishni belgilash;
+- Ishlar rahbariga vazifani bajarilgani haqida xabar berish;
+- Ish joyini avvalgi holatiga qaytarish choralari qabul qilish.
+
+---
+
+4. **Narvonlar polga nisbatan qanday xavfsiz burchak ostida o'rnatiladi?**
+
+Javob: Narvonlar gorizontalga (ya'ni polga) nisbatan 75° ± 5° burchak ostida o'rnatiladi. Ruxsat etilgan diapazon: 65° dan 80° gacha. Kamroq burchakda — orqaga ag'darilish, kattaroq burchakda — oldinga tushish xavfi.
+
+---
+
+5. **Yong'in signalizatsiyasi ishga tushganda ishchilar harakatlari haqida gapirib bering.**
+
+Javob:
+- Darhol ishni to'xtatish;
+- 101 telefoni orqali yoki navbatchiga xabar berish;
+- Belgilangan yo'llar bo'yicha odamlarni evakuatsiya qilishni boshlash;
+- Ogohlantirish tizimini yoqish;
+- (Agar bu xavfsiz bo'lsa) birlamchi vositalar bilan yong'inni o'chirishni boshlash;
+- Yong'in xodimlarini kutib olish, yonish joyini ko'rsatish;
+- Evakuatsiyada liftlardan foydalanmaslik;
+- Jabr ko'rganlarga yordam berish.
+
+---
+
+6. **Bilvosita yurak massaji qanday o'tkaziladi?**
+
+Javob:
+1. Jabr ko'rganni qattiq yuzaga yotqizing.
+2. Ko'krak suyagining pastki uchiniga (qilichsimon o'siqdan 2 barmoq yuqoriga) kaft asosini qo'ying.
+3. Ikkinchi kaftni ustidan, barmoqlar ko'krakka tegmagan holda.
+4. Qo'llar to'g'ri, yelkalar ko'krak ustida.
+5. 30 bosish: chuqurligi 5-6 sm, tezligi daqiqada 100-120, itarish keskin.
+6. 30 bosishdan keyin — 2 marta "og'izdan-og'izga" (yoki "og'izdan-burunga") nafas.
+7. Nisbat 30:2, puls tiklanishi yoki shifokorlar kelishigacha uzluksiz.
+8. Ikki qutqaruvchi bo'lganda — uzluksiz bosish, har 30 bosishdan keyin nafaslar.
+
+---
+
+**BILET № 9**
+
+1. **Balandlikda sozlash yoki montaj ishlari qanday qurilmalardan bajariladi?**
+
+Javob: Ishlarni bajarishga ruxsat etiladi:
+- Qurilish iskalalaridan;
+- Ko'chma podmostlardan;
+- Ko'taruvchi qurilish lyulkalaridan;
+- Turna qo'nmashtirgichlardan;
+- Avtoko'taruvchilar va gidroko'taruvchilardan;
+- Himoya chegaralashga ega binolarning konstruksiyalaridan.
+
+---
+
+2. **Qanday ishlar balandlikda ishlash, qanday ishlar vertolyot (alp) ishlari deb ataladi?**
+
+Javob:
+- Balandlikda ishlash — ishchining yer yuzasi, pol, ish joyidan 1,5 m dan yuqori balandlikda yoki 1,5 m va undan yuqori balandlikdagi chegaralanmagan balandlik farqlaridan 2 m dan yaqin masofada bo'lishi bilan bajariladigan ishlar.
+- Vertolyot (alp) ishlari — alpinist asbob-uskunalaridan (arqonlar, sug'urta qurilmalari, tugunlar) foydalanib, faqat konstruksiyalar yoki arqonga tayangan holda balandlikda bajariladigan ishlar.
+
+---
+
+3. **Balandlikda ishlashda bog'lash detallari, ehtiyot qismlar va asbob-uskunalar qayerda saqlanishi kerak?**
+
+Javob:
+- Maxsus po'stloqlarda, qopqoqli sumkalarda;
+- Belga yoki konstruksiyaga bog'langan konteynerlarda;
+- Kiyim cho'ntaklarida saqlash taqiqlanadi;
+- Iskalarda — konstruksiyaga mahkamlangan maxsus qutilarda;
+- Asbob-uskuna arqon bilan bog'langan bo'lishi kerak (tushib ketishdan sug'urta).
+
+---
+
+4. **Balandlikda payvandlash ishlari bajarishda qanday xavfsizlik choralari saqlanishi kerak?**
+
+Javob:
+- Olov ishlari uchun ruxsatnoma;
+- Yetishish masofasida o't o'chirgich;
+- Payvandlash joyi ostida yonmaydigan yopishqoq;
+- Yonuvchan materiallarni 5 m va undan uzoqroq olib tashlash;
+- Pastki qavatda o't o'chirgich bilan navbatchi;
+- Himoya qalqonlari, qo'lqoplar, kiyim ishlatish;
+- Payvandlash apparatini yerga ulash;
+- Portlash xavfi gazlarining yo'qligini tekshirish;
+- Tugatgandan keyin — parchalanish joyini tekshirish.
+
+---
+
+5. **Balandlikda ishlashda montyor-ishchi nima bajarishi kerak?**
+
+Javob:
+- Instruktajdan o'tish va guvohnoma bo'lishi;
+- Ishqobiliyatli ko'makchi vositalar va SHV dan foydalanish;
+- Doimiy ravishda sug'urta kamarini qo'llash;
+- Kran ko'tarayotgan yuk ostida bo'lmaslik;
+- Iskala va podmostlarni ortiqcha yuklamaslik;
+- Asbob-uskuna va materiallarni tashlamaslik;
+- Brigadir bilan aloqa saqlash;
+- Yomon ob-havoda ishlashmaslik;
+- Ochiq chetda ishlashda sug'urta kamarida bo'lish.
+
+---
+
+6. **Jarohatlar va qon ketishda birinchi yordam.**
+
+- Arterial qon ketishda (yorqin qizil qon, urib turadi): yaradan yuqoriga (5-10 sm) jigarrang qo'yish, vaqtni qayd etish, (20 daqiqadan keyin jigarrangni bo'shatish), jigarrang bo'lmasa — a'zoni maksimal bukish.
+- Venozda (to'q qon, oqib turadi): bosuvchi bog'ich qo'yish.
+- Kapillyarda: antiseptik bilan ishlov berish, steril bog'ich.
+- Jarohatlanishda: chuqur yaralarni yuvmaslik, steril bog'ich qo'yish, ko'krak yoki qorinni nafaqat yara — uch tomonidan plyonka bilan yopish (klapan).
+- Tez yordam chaqirish.
+
+---
+
+**BILET № 10**
+
+1. **Tashkiliy chora-tadbirlarga nimalar kiradi?**
+
+Javob:
+- Mehnatni muhofaza qilish bo'yicha ko'rsatmalar ishlab chiqish va tasdiqlash;
+- Ishchilarni o'qitish va instruktajdan o'tkazish;
+- Qoidalar bilishni tekshirish;
+- Ruxsatnomalar berish;
+- Tibbiy ko'riklar;
+- SHV bilan ta'minlash;
+- Javobgar shaxslarni tayinlash.
+
+---
+
+2. **Shaxsiy himoya vositalariga qanday talablar qo'yiladi?**
+
+Javob: 
+- GOST va TUga muvofiqligi;
+- Ishqobiliyati, mexanik shikastlanishlarsiz bo'lishi;
+- Davriy sinovdan o'tish (sug'urta kamarlari — 6 oyda 1 marta);
+- To'g'ri saqlash (quruq xonada, aggressive muhit ta'siridan himoyalangan);
+- Ishlab chiqarish va sinov sanalarini ko'rsatuvchi belgilanish;
+- Faqat maqsadiga muvofiq foydalanish.
+
+---
+
+3. **Montyor tirmoqlari bilan ko'tarilishda qanday xavfsizlik talablari saqlanishi kerak?**
+
+Javob: 
+- Tirmoqlarni sinash — 6 oyda 1 marta;
+- Dielektrik qo'lqoplar va etiklar kiyish;
+- Ko'tarilishdan oldin tirmoqlarning ishqobiliyatini tekshirish;
+
+---
+
+4. **Balandlikda ishlashda ishchi qanday xavfsiz kuchlanishdan foydalanishi kerak?**
+
+Javob:
+- 12 V — alohida xavfli sharoitlarda (idish ichida, oshirilgan namlik muhitida, quduqlarda);
+- 36 V — oshirilgan xavfli xonalarda ishlashda;
+- 42 V — ko'chma elektr asbob-uskunalar bilan ishlashda mumkin.
+
+---
+
+5. **Savdo markazlari do'konlarida o'rnatilgan yong'in signalizatsiya vositalari haqida gapirib bering.**
+
+Javob:
+- Avtomatik yong'in signalizatsiyasi (AYS): tutun, issiqlik sezgichlari;
+- Evakuatsiyani boshqarish va ogohlantirish tizimi (EBOT): ovozli va yorug'lik ogohlantirgichlari, "Chiqish" tablolar;
+- Yong'inga qarshi suv ta'minoti: sprinkler tizimlari, yong'in kranlari;
+- Tutunni olib tashlash tizimi;
+- Qo'riq-yong'in signalizatsiyasi pultesi (QYSP) — navbatchi xodimlar;
+- Qo'l bilan ishga tushiriluvchi sezgichlar ("Yong'in" tugmalari) — evakuatsiya yo'llarida har 25 m da.
+
+---
+
+6. **Elektr toki ta'siridan jabr ko'rganlarga ko'rsatiladigan birinchi yordam hajmi?**
+
+Javob:
+1. Tok ta'siridan ozod qilish (o'chirish, itarish).
+2. Holatni baholash (ong, nafas olish, puls).
+3. Nafas olish va qon aylanishi to'xtaganda — SLR (bilvosita yurak massaji + sun'iy nafas olish) tiklanish yoki shifokor kelishigacha.
+4. Nafas olish bo'lganda — yonboshlab yotqizish (barqaror holat), iliqlik, tinchlik.
+5. Kuyishlarni ishlov berish (steril bog'ich, pufakchalarni ochmaslik).
+6. Tez yordam chaqirish (103).
+7. Keyingi gospitalizatsiya majburiy (hatto qisqa muddatli urishda ham).
+
+---
+
+**BILET № 12**
+
+1. **Texnik chora-tadbirlarga nimalar kiradi?**
+
+Javob:
+- Chegaralash, yopishqoqlar, podmostlar o'rnatish;
+- Kuchlanishni o'chirish, kuchlanish yo'qligini tekshirish
+- Shaxsiy himoya vositalaridan foydalanish (sug'urta tizimlari);
+- Uskunani yerga ulash va nollash;
+- Dielektrik gilamchalar, qo'lqoplardan foydalanish;
+- Ventilyatsiya, yoritish o'rnatish;
+- Xavfli zonalarni signalizatsiya va blokirovka qilish;
+- Izolyatsiyali dastalik asbob-uskunalardan foydalanish;
+- Vaqtinchalik to'siqlar, ogohlantiruvchi belgilar o'rnatish.
+
+---
+
+2. **Yuqori platformasiz ko'chma narvonlar va zinapoyalarda qanday ishlar taqiqlanadi?**
+
+Javob: Taqiqlanadi:
+- Elektr asbob-uskunalaridan foydalanish bilan ishlash;
+- 5 kg dan ortiq yuk bilan ishlash;
+- Katta kuch talab qiluvchi ishlar (mix urish, burg'ulash);
+- Sug'urta kamarisiz 1,5 m dan yuqori balandlikda ishlash;
+- Ishchining zinapoya yuqori pog'onasida joylashishi bilan ishlash.
+
+---
+
+3. **Qanday instruktaj turlarini bilasiz? Instruktaj o'tkazish muddati.**
+
+Javob:
+- Kirish — ishga qabul qilinganda (mehnatni muhofaza qilish bo'yicha mutaxassis o'tkazadi);
+- Ish joyida birlamchi — ish boshlashdan oldin (usta o'tkazadi);
+- Navbatdagi — har 3 oyda;
+- Navbatdan tashqari — nazorat organlari talabiga ko'ra, sharoitlar va qoidalar o'zgarganda, avariya, baxtsiz hodisalar, texnika xavfsizligi qoidalarini buzishlarda.
+
+---
+
+4. **Balandlikda ishlashda ishchi qanday qoidalarni bajarishi kerak?**
+
+Javob:
+- Texnika xavfsizligini saqlash;
+- Guvohnoma bo'lishi va tibbiy ko'rikdan o'tish;
+- Ruxsatnoma va instruktaj olish;
+- Ishqobiliyatli shaxsiy himoya vositalaridan foydalanish;
+- Doimiy ravishda sug'urta kamarini qo'llash;
+- Yomon ob-havoda ishlashmaslik (shamol 10-12 m/s);
+- Konstruksiyalarni ortiqcha yuklamaslik;
+- Ko'tarilayotgan yuk ostida bo'lmaslik;
+- Asbob-uskunalarni tashlamaslik, po'stloqlardan foydalanish;
+
+---
+
+5. **Elektr qurilmalari, uskunalari, simlari va boshqalarning yonishini o'chirishda qanday o't o'chirgich ishlatiladi?**
+
+Javob:
+- Uglerodli o't o'chirgichlar (OU-1, OU-2, OU-3) — tok o'tkazmaydi, uskunani shikastlamaydi;
+- Changli o't o'chirgichlar (OP-2, OP-4) — universal, lekin cho'kindi qoldiradi;
+- Kuchlanish o'chirilmaguncha suvli va ko'pikli o't o'chirgichlardan foydalanish taqiqlanadi (tok o'tkazadi).
+
+---
+
+6. **Jabr ko'rganni elektr toki ta'siridan qanday ozod qilish kerak?**
+
+Javob: 
+- Elektr o'rnatmasini o'chirish (rubilnik, avtomat);
+- Agar o'chirish mumkin bo'lmasa — quruq kiyimidan tortib olish;
+- Dielektrik qo'lqoplar, quruq yog'och tayoq, taxta ishlatish;
+- Metall qismlarga va jabr ko'rganning tanasiga yalang'och qo'llar bilan tegmang;
+- Yuqori kuchlanishda — masofani saqlang (qadam kuchlanishi).

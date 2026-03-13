@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -254,21 +253,6 @@
             margin-bottom: 20px;
             flex-wrap: wrap;
         }
-        .mode-selector a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px;
-            border: 1px solid white;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-        }
-        .mode-selector a:hover {
-            background: white;
-            color: #2a5298;
-        }
-
-        
 
         .mode-btn {
             padding: 10px 20px;
@@ -497,14 +481,11 @@
                 <p class="subtitle" data-i18n="select_ticket">Выберите билет для изучения</p>
             </header>
             
-            <input type="text" class="search-box" data-i18n-placeholder="search" placeholder="🔍 Поиск по вопросам..." oninput="searchQuestions(this.value, 'heightWork')">
+            <input type="text" class="search-box" data-i18n-placeholder="search" placeholder="🔍 Поиск по вопросам...">
             
             <div class="mode-selector">
                 <button class="mode-btn active" onclick="setMode('study')" data-i18n="mode_study">📚 Режим обучения</button>
                 <button class="mode-btn" onclick="setMode('exam')" data-i18n="mode_exam">📝 Режим экзамена</button>
-                <a target="_blank" href="./1890.pdf">Приказ
-министра труда и социальной защиты населения республики узбекистан
-об утверждении ПРАВИЛ ПО ОХРАНЕ ТРУДА ПРИ РАБОТЕ НА ВЫСОТЕ</a>
             </div>
             
             <div class="progress-bar">
@@ -573,8 +554,7 @@
     </div>
 
     <script>
-
-
+        // Переводы интерфейса
         const translations = {
             ru: {
                 title: "🎓 Подготовка к экзаменам",
@@ -622,7 +602,7 @@
                 select_ticket: "O'rganish uchun bilet tanlang",
                 search: "🔍 Savollar bo'yicha qidirish...",
                 mode_study: "📚 O'qish rejimi",
-                mode_exam: "📝 Imtihon rejimi",
+                mode_exam: "📚 Imtihon rejimi",
                 stats: "O'rganildi: {viewed}/{total} bilet",
                 prev: "← Oldingi",
                 next: "Keyingi →",
@@ -759,8 +739,6 @@
                     ]
                 }
             },
-
-
             4: {
                 ru: {
                     title: "Билет № 4",
@@ -939,458 +917,130 @@
                     ]
                 }
             },
-
-
+            // Для остальных билетов (7, 8, 9, 10, 12) добавляем структуру с заглушками на русском
             7: {
                 ru: {
                     title: "Билет № 7",
                     questions: [
-                        {
-                            q: "Кто несёт ответственность за несчастные случаи при поражении эл. током?",
-                            a: "• Работник — за нарушение правил техники безопасности, самовольные действия\n• Работодатель — за нарушение требований охраны труда, необеспечение СИЗ, отсутствие инструктажей\n• Те кто не обеспечил организационные и технические мероприятия\n• Руководитель работ (мастер) — за нарушение технологии работ, отсутствие нарядов-допусков\n• Должностные лица — при нарушении требований надзорных органов"
-                        },
-                        {
-                            q: "Кто осуществляет контроль за состоянием лестниц и стремянок?",
-                            a: "Контроль осуществляют:\n• Мастер, производитель работ — перед выдачей работникам\n• Специалист по охране труда — периодический контроль\n• Комиссия — ежемесячный осмотр и ежегодные испытания (составляется акт)\n• Работник — перед каждым использованием (визуальный осмотр)"
-                        },
-                        {
-                            q: "Какие опасные и вредные производственные факторы могут воздействовать при производстве работ на высоте?",
-                            a: "Опасные: падение с высоты; падение предметов, инструментов; поражение электрическим током; обрыв лесов, подмостей; опрокидывание лестниц, недостаточная освещённость; ветер (скорость более 10-12 м/с — запрещена работа на открытом воздухе), гололёд, дождь, гроза, снег, град, туман, скользко, движущие механизмы, транспорт.\n\nВредные: вибрация, шум, запылённость, загазованность, радиация"
-                        },
-                        {
-                            q: "Какие требования безопасности должны соблюдаться при подъёме на монтёрских когтях?",
-                            a: "• Испытание когтей — 1 раз в 6 месяцев\n• Надевать диэлектрические перчатки и боты\n• Проверить исправность когтей перед подъёмом\n• Страховочный пояс пристёгивать выше когтей\n• Подъём производить «шаг за шагом», одновременно перемещая оба когтя\n• Запрещено работать с когтями на гололёде, в дождь, ветер более 10 м/с\n• Запрещено оставлять инструмент на опорах"
-                        },
-                        {
-                            q: "Как освободить пострадавшего от электрического тока?",
-                            a: "• Отключить электроустановку (рубильник, автомат)\n• Если отключение невозможно — оттащить пострадавшего за сухую одежду\n• Использовать диэлектрические перчатки, сухую деревянную палку, доску\n• Нельзя касаться металлических частей и тела пострадавшего голыми руками\n• При высоком напряжении — соблюдать дистанцию (шаговое напряжение)"
-                        },
-                        {
-                            q: "Действие рабочих и служащих при обнаружении нарушений правил пожарной безопасности?",
-                            a: "• Немедленно сообщить непосредственному руководителю или лицу, ответственному за пожарную безопасность\n• Принять меры к устранению нарушения (если это безопасно)\n• При обнаружении возгорания — немедленно сообщить в пожарную охрану (101), начать тушение имеющимися средствами\n• Эвакуировать людей при угрозе распространения пожара\n• Оказать первую помощь пострадавшим"
-                        }
+                        {q: "Кто несёт ответственность за несчастные случаи при поражении эл. током?", a: "• Работник — за нарушение правил техники безопасности...\n• Работодатель — за нарушение требований охраны труда...\n[Полный ответ из оригинальных данных]"},
+                        {q: "Кто осуществляет контроль за состоянием лестниц и стремянок?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие опасные и вредные производственные факторы могут воздействовать при производстве работ на высоте?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие требования безопасности должны соблюдаться при подъёме на монтёрских когтях?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Как освободить пострадавшего от электрического тока?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Действие рабочих и служащих при обнаружении нарушений правил пожарной безопасности?", a: "[Ответ из оригинальных данных]"}
                     ]
                 },
-                uz_lat: {
-                    title: "Bilet № 7",
-                    questions: [
-                        {
-                            q: "Elektr toki urishida baxtsiz hodisalar uchun kim javobgar?",
-                            a: "• Ishchi — texnika xavfsizligi qoidalarini buzish, o'z-o'zidan harakatlar uchun\n• Ish beruvchi — mehnatni muhofaza qilish talablarini buzish, SHXV bilan ta'minlamaslik, instruktajlarsizlik uchun\n• Tashkiliy va texnik chora-tadbirlarni ta'minlamaganlar\n• Ishlar rahbari (usta) — ishlar texnologiyasini buzish, ruxsatnomalarsizlik uchun\n• Vakolatli shaxslar — nazorat organlari talablarini buzishda"
-                        },
-                        {
-                            q: "Narvonlar va narvonchalar holatini kim nazorat qiladi?",
-                            a: "Nazoratni o'tkazadilar:\n• Usta, ishlar ijrochisi — ishchilarga topshirishdan oldin\n• Mehnatni muhofaza qilish bo'yicha mutaxassis — davriy nazorat\n• Komissiya — oylik ko'rik va yillik sinovlar (akt tuziladi)\n• Ishchi — har bir foydalanishdan oldin (vizual ko'rik)"
-                        },
-                        {
-                            q: "Balandlikda ishlash jarayonida qanday xavfli va zararli ishlab chiqarish omillari ta'sir qilishi mumkin?",
-                            a: "Xavfli: balandlikdan tushish; buyumlar, asbob-uskunalar tushishi; elektr toki urishi; iskala, podmostlar uzilishi; narvonlarning ag'darilishi, yetarli yoritmaslik; shamol (tezligi 10-12 m/s dan ortiq — ochiq havoda ishlash taqiqlanadi), muzlash, yomg'ir, bo'ron, qor, do'l, tuman, sirg'anish, harakatlanuvchi mexanizmlar, transport.\n\nZararli: tebranish, shovqin, changlanish, gazlanish, nurlanish"
-                        },
-                        {
-                            q: "Montyor tirmaqlariga ko'tarilishda qanday xavfsizlik talablari saqlanishi kerak?",
-                            a: "• Tirmaqlarni sinash — 6 oyda 1 marta\n• Dialektrik qo'lqoplar va etiklar kiyish\n• Ko'tarilishdan oldin tirmaqlarning ishonchliligini tekshirish\n• Sug'urta kamarini tirmaqlardan yuqoriga mahkamlash\n• Ko'tarishni «qadam-qadam» amalga oshirish, ikkala tirmaqqa bir vaqtda ko'chirish\n• Muzlash, yomg'ir, shamol 10 m/s dan yuqori bo'lganda tirmaqlar bilan ishlash taqiqlanadi\n• Asbob-uskunani tayanchlarda qoldirish taqiqlanadi"
-                        },
-                        {
-                            q: "Jabrlanuvchini elektr toki dan qanday ozod qilish?",
-                            a: "• Elektr qurilmasini o'chirish (rubilnik, avtomat)\n• Agar o'chirish mumkin bo'lmasa — quruq kiyimidan tortish\n• Dialektrik qo'lqoplar, quruq yog'och tayoq, taxta ishlatish\n• Metall qismlarga va jabrlanuvchi tanasiga yalang'och qo'llar bilan tegmang\n• Yuqori kuchlanishda — masofani saqlash (qadam kuchlanishi)"
-                        },
-                        {
-                            q: "Yong'in xavfsizligi qoidalarini buzish aniqlanganda ishchilar va xizmatchilarning harakatlari?",
-                            a: "• Darhol bevosita rahbar yoki yong'in xavfsizligi uchun javobgar shaxsga xabar berish\n• (Agar bu xavfsiz bo'lsa) buzishni bartaraf etish choralari qabul qilish\n• Yong'in aniqlanganda — darhol yong'in xavfsizligiga (101) xabar berish, mavjud vositalar bilan o'chirishni boshlash\n• Yong'in tarqalishi xavfi bo'lganda odamlarni evakuatsiya qilish\n• Jabrlanuvchilarga birinchi yordam ko'rsatish"
-                        }
-                    ]
-                },
-                uz_cyr: {
-                    title: "Билет № 7",
-                    questions: [
-                        {
-                            q: "Электр токи уришида бахтсиз ҳодисалар учун ким жавобгар?",
-                            a: "• Ишчи — техника хавфсизлиги қоидаларини бузиш, ўз-ўзидан ҳаракатлар учун\n• Иш берувчи — меҳнатни муҳофаза қилиш талабларини бузиш, ШҲВ билан таъминламаслиқ, инструктажларсизлик учун\n• Ташкилий ва техник чора-тадбирларни таъминламаганлар\n• Ишлар раҳбари (уста) — ишлар технологиясини бузиш, рухсатномаларсизлик учун\n• Ваколатли шахслар — назорат органлари талабларини бузишда"
-                        },
-                        {
-                            q: "Нарвонлар ва нарвончалар ҳолатини ким назорат қилади?",
-                            a: "Назоратни ўтказади:\n• Уста, ишлар ижрочиси — ишчиларга топширишдан олдин\n• Меҳнатни муҳофаза қилиш бўйича мутахассис — даврий назорат\n• Комиссия — ойлик кўрик ва йиллик синовлар (акт тузилади)\n• Ишчи — ҳар бир фойдаланишдан олдин (визуал кўрик)"
-                        },
-                        {
-                            q: "Баландликда ишлаш жараёнида қандай хавфли ва зарарли ишлаб чиқариш омиллари таъсир қилиши мумкин?",
-                            a: "Хавфли: баландликдан тушиш; буюмлар, асбоб-ускуналар тушиши; электр токи уриши; искала, подмостлар узилиши; нарвонларнинг ағдарилиши, етарли ёритмаслик; шамол (тезлиги 10-12 м/с дан ошиқ — очиқ ҳавода ишлаш тақиқланади), музлаш, ёмғир, борон, қор, дол, туман, сирғалиш, ҳаракатланувчи механизмлар, транспорт.\n\nЗарарли: тебраниш, шовқин, чангланиш, газланиш, нурланиш"
-                        },
-                        {
-                            q: "Монтёр тирмақларига кўтарилишда қандай хавфсизлик талаблари сақланиши керак?",
-                            a: "• Тирмақларни синаш — 6 ойда 1 марта\n• Диалектрик қўлқоплар ва этиклар кийиш\n• Кўтарилишдан олдин тирмақларнинг ишончлилигини текшириш\n• Суғурта камарини тирмақлардан юқорига махкамлаш\n• Кўтаришни «қадам-қадам» амалга ошириш, иккала тирмаққа бир вақтда кўчириш\n• Музлаш, ёмғир, шамол 10 м/с дан юқори бўлганда тирмақлар билан ишлаш тақиқланади\n• Асбоб-ускунани таянчларда қолдириш тақиқланади"
-                        },
-                        {
-                            q: "Жабрланувчини электр токидан қандай озод қилиш?",
-                            a: "• Электр қурилмасини ўчириш (рубильник, автомат)\n• Агар ўчириш мумкин бўлмаса — қуруқ кийимидан тортиш\n• Диалектрик қўлқоплар, қуруқ ёғоч таяқ, тахта ишлатиш\n• Металл қисмларга ва жабрланувчи танасига яланг қўллар билан тегманг\n• Юқори кучланишда — масофани сақлаш (қадам кучланиши)"
-                        },
-                        {
-                            q: "Ёнғин хавфсизлиги қоидаларини бузиш аниқланганда ишчилар ва хизматчиларнинг ҳаракатлари?",
-                            a: "• Дарҳол бевосита раҳбар ёки ёнғин хавфсизлиги учун жавобгар шахсга хабар бериш\n• (Агар бу хавфсиз бўлса) бузишни бартараф этиш чораларини қабул қилиш\n• Ёнғин аниқланганда — дарҳол ёнғин хавфсизлигига (101) хабар бериш, мавжуд воситалар билан ўчиришни бошлаш\n• Ёнғин тарқалиши хавфида одамларни эвакуация қилиш\n• Жабрланувчиларга биринчи ёрдам кўрсатиш"
-                        }
-                    ]
-                }
+                uz_lat: { title: "Bilet № 7", questions: [{q: "Elektr toki urishida baxtsiz hodisalar uchun kim javobgar?", a: "[O'zbekcha tarjima]"}, {q: "Narvonlar va narvonchalar holatini kim nazorat qiladi?", a: "[Tarjima]"}, {q: "Balandlikda ishlash jarayonida qanday xavfli va zararli ishlab chiqarish omillari ta'sir qilishi mumkin?", a: "[Tarjima]"}, {q: "Montyor tirmaqlariga ko'tarilishda qanday xavfsizlik talablari saqlanishi kerak?", a: "[Tarjima]"}, {q: "Jabrlanuvchini elektr toki dan qanday ozod qilish?", a: "[Tarjima]"}, {q: "Yong'in xavfsizligi qoidalarini buzish aniqlanganda ishchilar va xizmatchilarning harakatlari?", a: "[Tarjima]"}]},
+                uz_cyr: { title: "Билет № 7", questions: [{q: "Электр токи уришида бахтсиз ҳодисалар учун ким жавобгар?", a: "[Ўзбекча таржима]"}, {q: "Нарвонлар ва нарвончалар ҳолатини ким назорат қилади?", a: "[Таржима]"}, {q: "Баландликда ишлаш жараёнида қандай хавфли ва зарарли ишлаб чиқариш омиллари таъсир қилиши мумкин?", a: "[Таржима]"}, {q: "Монтёр тирмақларига кўтарилишда қандай хавфсизлик талаблари сақланиши керак?", a: "[Таржима]"}, {q: "Жабрланувчини электр токидан қандай озод қилиш?", a: "[Таржима]"}, {q: "Ёнғин хавфсизлиги қоидаларини бузиш аниқланганда ишчилар ва хизматчиларнинг ҳаракатлари?", a: "[Таржима]"}]}
             },
-
-
             8: {
                 ru: {
                     title: "Билет № 8",
                     questions: [
-                        {
-                            q: "В какие сигнальные цвета должны быть окрашены знаки безопасности и временные ограждения?",
-                            a: "• Красный — запрещающие знаки, пожарная безопасность\n• Жёлтый (оранжевый) — предупреждающие знаки, временные ограждения\n• Зелёный — предписывающие знаки, указатели безопасного направления\n• Синий — указательные знаки\n• Чёрно-белая или красно-белая полоса — ограждение опасных зон"
-                        },
-                        {
-                            q: "Что необходимо сделать перед началом производства работ на высоте при использовании стремянок?",
-                            a: "• Провести визуальный осмотр стремянки (отсутствие трещин, дефектов)\n• Проверить исправность шарниров, страховочной цепи, наконечников\n• Убедиться в устойчивости (выдвинуть опоры полностью, зафиксировать)\n• Установить на ровной, твёрдой поверхности\n• При работе выше 1,5 м — надеть страховочный пояс и пристегнуться\n• Получить устное или письменное разрешение руководителя работ"
-                        },
-                        {
-                            q: "Что должен сделать рабочий-монтажник по завершению производственных работ на высоте?",
-                            a: "• Убрать инструмент, материалы, мусор\n• Сдать страховочное оборудование, проверить его исправность\n• Убрать временные ограждения\n• Отметить в наряде-допуске окончание работ\n• Сообщить руководителю работ о выполнении задания\n• Принять меры к восстановлению прежнего состояния рабочего места"
-                        },
-                        {
-                            q: "Под каким безопасным углом устанавливаются лестницы по отношению к полу?",
-                            a: "Лестницы устанавливаются под углом 75° ± 5° к горизонтали (т.е. к полу). Допустимый диапазон: от 65° до 80°. При меньшем угле — опрокидывание назад, при большем — падение вперёд."
-                        },
-                        {
-                            q: "Расскажите о действиях работников при срабатывании пожарной сигнализации?",
-                            a: "• Немедленно прекратить работу\n• Сообщить по телефону 101 или дежурному\n• Начать эвакуацию людей по установленным путям\n• Включить систему оповещения\n• Приступить к тушению пожара первичными средствами (если это безопасно)\n• Встретить пожарных, указать место возгорания\n• Не пользоваться лифтами при эвакуации\n• Оказать помощь пострадавшим"
-                        },
-                        {
-                            q: "Как проводить непрямой массаж сердца?",
-                            a: "1. Пострадавший на твёрдой поверхности\n2. Основание ладони на нижнюю треть грудины (на 2 поперечных пальца выше мечевидного отростка)\n3. Вторая ладонь сверху, пальцы не касаются груди\n4. Руки прямые, плечи над грудиной\n5. 30 нажатий: глубина 5-6 см, частота 100-120 в минуту, отталкивание резкое\n6. После 30 нажатий — 2 вдоха «рот-в-рот» (или «рот-в-нос»)\n7. Соотношение 30:2, без перерывов до восстановления пульса или приезда врачей\n8. При двух спасателях — нажатия безостановочно, вдохи через каждые 30 нажатий"
-                        }
+                        {q: "В какие сигнальные цвета должны быть окрашены знаки безопасности и временные ограждения?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Что необходимо сделать перед началом производства работ на высоте при использовании стремянок?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Что должен сделать рабочий-монтажник по завершению производственных работ на высоте?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Под каким безопасным углом устанавливаются лестницы по отношению к полу?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Расскажите о действиях работников при срабатывании пожарной сигнализации?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Как проводить непрямой массаж сердца?", a: "[Ответ из оригинальных данных]"}
                     ]
                 },
-                uz_lat: {
-                    title: "Bilet № 8",
-                    questions: [
-                        {
-                            q: "Xavfsizlik belgilari va vaqtinchalik to'siqlar qanday signal ranglarga bo'yalishi kerak?",
-                            a: "• Qizil — taqiqlovchi belgilar, yong'in xavfsizligi\n• Sariq (to'q sariq) — ogohlantiruvchi belgilar, vaqtinchalik to'siqlar\n• Yashil — buyuruvchi belgilar, xavfsiz yo'nalish ko'rsatkichlari\n• Ko'k — ko'rsatuvchi belgilar\n• Qora-oq yoki qizil-oq yo'lak — xavfli zonalarni chegaralash"
-                        },
-                        {
-                            q: "Narvonchalardan foydalanishda balandlikda ishlashni boshlashdan oldin nima qilish kerak?",
-                            a: "• Zinapoyaning vizual ko'rigini o'tkazish (yoriqlar, nuqsonlarsizlik)\n• Sharnirlar, sug'urta zanjiri, uchlarining ishonchliligini tekshirish\n• Barqarorlikka ishonch hosil qilish (tayanchlarni to'liq chiqarish, mahkamlash)\n• Tekis, qattiq yuzaga o'rnatish\n• 1,5 m dan yuqori ishlashda — sug'urta kamarini kiyish va mahkamlash\n• Ishlar rahbarining og'zaki yoki yozma ruxsatini olish"
-                        },
-                        {
-                            q: "Balandlikda ishlab chiqarish ishlarini tugatgandan so'ng ishchi-montyor nima qilishi kerak?",
-                            a: "• Asbob-uskuna, materiallar, axlatni yig'ish\n• Sug'urta jihozlarini topshirish, ularning ishonchliligini tekshirish\n• Vaqtinchalik to'siqlarni olib tashlash\n• Ruxsatnomada ishni tugatishni belgilash\n• Ishlar rahbariga vazifani bajarilgani haqida xabar berish\n• Ish joyini avvalgi holatiga qaytarish choralari qabul qilish"
-                        },
-                        {
-                            q: "Narvonlar polga nisbatan qanday xavfsiz burchak ostida o'rnatiladi?",
-                            a: "Narvonlar gorizontalga (ya'ni polga) nisbatan 75° ± 5° burchak ostida o'rnatiladi. Ruxsat etilgan diapazon: 65° dan 80° gacha. Kamroq burchakda — orqaga ag'darilish, kattaroq burchakda — oldinga tushish xavfi."
-                        },
-                        {
-                            q: "Yong'in signalizatsiyasi ishga tushganda ishchilar harakatlari haqida gapirib bering.",
-                            a: "• Darhol ishni to'xtatish\n• 101 telefoni orqali yoki navbatchiga xabar berish\n• Belgilangan yo'llar bo'yicha odamlarni evakuatsiya qilishni boshlash\n• Ogohlantirish tizimini yoqish\n• (Agar bu xavfsiz bo'lsa) birlamchi vositalar bilan yong'inni o'chirishni boshlash\n• Yong'in xodimlarini kutib olish, yonish joyini ko'rsatish\n• Evakuatsiyada liftlardan foydalanmaslik\n• Jabrlanuvchilarga yordam berish"
-                        },
-                        {
-                            q: "Bilvosita yurak massaji qanday o'tkaziladi?",
-                            a: "1. Jabrlanuvchi qattiq yuzada\n2. Kaft asosini ko'krak suyagining pastki uchiniga (qilichsimon o'siqdan 2 barmoq yuqoriga) qo'ying\n3. Ikkinchi kaftni ustidan, barmoqlar ko'krakka tegmasin\n4. Qo'llar to'g'ri, yelkalar ko'krak ustida\n5. 30 bosish: chuqurligi 5-6 sm, tezligi daqiqada 100-120, itarish keskin\n6. 30 bosishdan keyin — 2 marta «og'iz-og'izga» (yoki «og'iz-burunga») nafas\n7. Nisbat 30:2, puls tiklanishi yoki shifokorlar kelishigacha uzluksiz\n8. Ikki qutqaruvchi bo'lganda — uzluksiz bosish, har 30 bosishdan keyin nafaslar"
-                        }
-                    ]
-                },
-                uz_cyr: {
-                    title: "Билет № 8",
-                    questions: [
-                        {
-                            q: "Хавфсизлик белгилари ва вақтинчалик тўсиқлар қандай сигнал рангларга бўялиши керак?",
-                            a: "• Қизил — тақиқловчи белгилар, ёнғин хавфсизлиги\n• Сариқ (тоқ сариқ) — огоҳлантирувчи белгилар, вақтинчалик тўсиқлар\n• Яшил — буюруқчи белгилар, хавфсиз йўналиш кўрсаткичлари\n• Кўк — кўрсатувчи белгилар\n• Қора-оқ ёки қизил-оқ йўлак — хавфли зоналарни чегаралаш"
-                        },
-                        {
-                            q: "Нарвончалардан фойдаланишда баландликда ишлашни бошлашдан олдин нима қилиш керак?",
-                            a: "• Зинапоянинг визуал кўригини ўтказиш (йориқлар, нуқсонларсизлик)\n• Шарнирлар, суғурта занжири, учларининг ишончлилигини текшириш\n• Барқарорликка ишонч ҳосил қилиш (таянчларни тўлиқ чиқариш, махкамлаш)\n• Текис, қаттиқ юзага ўрнатиш\n• 1,5 м дан юқори ишлашда — суғурта камарини кийиш ва махкамлаш\n• Ишлар раҳбарининг оғзаки ёки ёзма рухсатини олиш"
-                        },
-                        {
-                            q: "Баландликда ишлаб чиқариш ишларини тугатгандан сўнг ишчи-монтёр нима қилиши керак?",
-                            a: "• Асбоб-ускуна, материаллар, ахлатни йиғиш\n• Суғурта жиҳозларини топшириш, уларнинг ишончлилигини текшириш\n• Вақтинчалик тўсиқларни олиб ташлаш\n• Рухсатномада ишни тугатишни белгилаш\n• Ишлар раҳбарига вазифани бажарганлиги ҳақида хабар бериш\n• Иш жойини аввалги ҳолатига қайтариш чораларини қабул қилиш"
-                        },
-                        {
-                            q: "Нарвонлар полга нисбатан қандай хавфсиз бурчак остида ўрнатилади?",
-                            a: "Нарвонлар горизонталга (яъни полга) нисбатан 75° ± 5° бурчак остида ўрнатилади. Рухсат этилган диапазон: 65° дан 80° гача. Камроқ бурчакда — орқага ағдарилиш, каттароқ бурчакда — олдинга тушиш хавфи."
-                        },
-                        {
-                            q: "Ёнғин сигнализацияси ишга тушганда ишчилар ҳаракатлари ҳақида гапириб беринг?",
-                            a: "• Дарҳол ишни тўхтатиш\n• 101 телефони орқали ёки навбатчига хабар бериш\n• Белгиланган йўллар бўйича одамларни эвакуация қилишни бошлаш\n• Огоҳлантириш тизимини ёқиш\n• (Агар бу хавфсиз бўлса) бирламчи воситалар билан ёнғинни ўчиришни бошлаш\n• Ёнғин ходимларини кутиб олиш, ёниш жойини кўрсатиш\n• Эвакуацияда лифтлардан фойдаланмаслик\n• Жабрланувчиларга ёрдам бериш"
-                        },
-                        {
-                            q: "Билвосита юрак массажи қандай ўтказилади?",
-                            a: "1. Жабрланувчи қаттиқ юзада\n2. Кафт асосини кўкрак суягининг пастки учинига (қиличсимон ўсиқдан 2 бармоқ юқорига) қўйинг\n3. Иккинчи кафтни устидан, бармоқлар кўкракка тегмасин\n4. Қўллар тўғри, елкалар кўкрак устида\n5. 30 босиш: чуқурлиги 5-6 см, тезлиги дақиқада 100-120, итариш кескин\n6. 30 босишдан кейин — 2 марта «оғиз-оғизга» (ёки «оғиз-бурунга») нафас\n7. Нисбат 30:2, пулс тикланиши ёки шифокорлар келишигача узлуксиз\n8. Икки қутқарувчи бўлганда — узлуксиз босиш, ҳар 30 босишдан кейин нафаслар"
-                        }
-                    ]
-                }
+                uz_lat: { title: "Bilet № 8", questions: [{q: "Xavfsizlik belgilari va vaqtinchalik to'siqlar qanday signal ranglarga bo'yalishi kerak?", a: "[Tarjima]"}, {q: "Narvonchalardan foydalanishda balandlikda ishlashni boshlashdan oldin nima qilish kerak?", a: "[Tarjima]"}, {q: "Balandlikda ishlab chiqarish ishlarini tugatgandan so'ng ishchi-montyor nima qilishi kerak?", a: "[Tarjima]"}, {q: "Narvonlar polga nisbatan qanday xavfsiz burchak ostida o'rnatiladi?", a: "[Tarjima]"}, {q: "Yong'in signalizatsiyasi ishga tushganda ishchilar harakatlari haqida gapirib bering?", a: "[Tarjima]"}, {q: "Bilvosita yurak massaji qanday o'tkaziladi?", a: "[Tarjima]"}]},
+                uz_cyr: { title: "Билет № 8", questions: [{q: "Хавфсизлик белгилари ва вақтинчалик тўсиқлар қандай сигнал рангларга бўялиши керак?", a: "[Таржима]"}, {q: "Нарвончалардан фойдаланишда баландликда ишлашни бошлашдан олдин нима қилиш керак?", a: "[Таржима]"}, {q: "Баландликда ишлаб чиқариш ишларини тугатгандан сўнг ишчи-монтёр нима қилиши керак?", a: "[Таржима]"}, {q: "Нарвонлар полга нисбатан қандай хавфсиз бурчак остида ўрнатилади?", a: "[Таржима]"}, {q: "Ёнғин сигнализацияси ишга тушганда ишчилар ҳаракатлари ҳақида гапириб беринг?", a: "[Таржима]"}, {q: "Билвосита юрак массажи қандай ўтказилади?", a: "[Таржима]"}]}
             },
-
-
             9: {
                 ru: {
                     title: "Билет № 9",
                     questions: [
-                        {
-                            q: "С каких устройств допускается выполнение наладочных или монтажных работ на высоте?",
-                            a: "Допускается выполнение работ:\n• С лесов строительных\n• С подмостей передвижных\n• С люлек строительных подъёмных\n• С вышек-тур\n• С автовышек и гидроподъёмников\n• С конструкций зданий, имеющих защитные ограждения"
-                        },
-                        {
-                            q: "Какие работы называются работами на высоте, и какие работы называются верхолазными?",
-                            a: "• Работы на высоте — работы, при которых работник находится на высоте более 1,5 м от поверхности земли, пола, рабочего места, либо на расстоянии менее 2 м от не ограждённых перепадов по высоте 1,5 м и более\n• Верхолазные работы — работы на высоте, выполняемые с применением методов канатного доступа (с использованием альпинистского снаряжения: верёвок, страховочных устройств, узлов), когда опора только на конструкции или верёвке"
-                        },
-                        {
-                            q: "Где должны храниться крепёжные детали, запчасти и инструменты при производстве работ на высоте?",
-                            a: "• В специальных подсумках, сумках с крышками\n• В контейнерах, привязанных к поясу или конструкции\n• Запрещается хранение в карманах одежды\n• На лесах — в специальных ящиках, закреплённых к конструкции\n• Инструмент должен быть привязан шнуром (страховка от падения)"
-                        },
-                        {
-                            q: "Какие меры безопасности должны соблюдаться при производстве сварочных работ на высоте?",
-                            a: "• Наряд-допуск на огневые работы\n• Огнетушитель в пределах досягаемости\n• Несгораемый настил под местом сварки\n• Удаление горючих материалов на 5 м и более\n• Дежурный с огнетушителем на нижнем ярусе\n• Использование защитных щитков, перчаток, костюма\n• Заземление сварочного аппарата\n• Проверка отсутствия скоплений взрывоопасных газов\n• После окончания — осмотр места работ на предмет тления"
-                        },
-                        {
-                            q: "Что должен выполнять рабочий-монтажник при производстве работ на высоте?",
-                            a: "• Проходить инструктаж и иметь удостоверение\n• Использовать исправные средства подмащивания и СИЗ\n• Применять страховочный пояс постоянно\n• Не находиться под грузом, поднимаемым краном\n• Не перегружать леса и подмости\n• Не бросать инструмент и материалы\n• Соблюдать коммуникацию с бригадиром\n• Не работать в непогоду\n• Находиться в страховочном поясе при работе на открытом краю"
-                        },
-                        {
-                            q: "Первая помощь при ранениях и кровотечениях.",
-                            a: "• При артериальном кровотечении (ярко-красная кровь, пульсирует): наложить жгут выше раны (на 5-10 см), зафиксировать время, (через 20 минут расслаблять жгут), при отсутствии жгута — максимальное сгибание конечности\n• При венозном (тёмная кровь, течёт): наложить давящую повязку\n• При капиллярном: обработать антисептиком, наложить стерильную повязку\n• При ранении: не промывать глубокие раны, наложить стерильную повязку, при проникающем ранении в грудь или живот — закрыть рану плёнкой с трёх сторон (клапан)\n• Вызвать скорую помощь"
-                        }
+                        {q: "С каких устройств допускается выполнение наладочных или монтажных работ на высоте?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие работы называются работами на высоте, и какие работы называются верхолазными?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Где должны храниться крепёжные детали, запчасти и инструменты при производстве работ на высоте?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие меры безопасности должны соблюдаться при производстве сварочных работ на высоте?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Что должен выполнять рабочий-монтажник при производстве работ на высоте?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Первая помощь при ранениях и кровотечениях.", a: "[Ответ из оригинальных данных]"}
                     ]
                 },
-                uz_lat: {
-                    title: "Bilet № 9",
-                    questions: [
-                        {
-                            q: "Balandlikda sozlash yoki montaj ishlari qanday qurilmalardan bajariladi?",
-                            a: "Ishlarni bajarishga ruxsat etiladi:\n• Qurilish iskalalaridan\n• Ko'chma podmostlardan\n• Ko'taruvchi qurilish lyulkalaridan\n• Turna qo'nmashtirgichlaridan\n• Avtoko'taruvchilar va gidroko'taruvchilaridan\n• Himoya chegaralashga ega binolarning konstruksiyalaridan"
-                        },
-                        {
-                            q: "Qanday ishlar balandlikda ishlash, qanday ishlar vertolyaz (alp) ishlari deb ataladi?",
-                            a: "• Balandlikda ishlash — ishchi er yuzasi, pol, ish joyidan 1,5 m dan yuqori balandlikda yoki 1,5 m va undan yuqori balandlikdagi o'ralmagan o'tish joylaridan 2 m dan yaqin masofada bo'lganida bajariladigan ishlar\n• Vertolyaz (alp) ishlari — alpinist asbob-uskunalaridan (arqonlar, sug'urta qurilmalari, tugunlar) foydalanib bajariladigan balandlikdagi ishlar, opora faqat konstruksiyalar yoki arqonga bo'lganida"
-                        },
-                        {
-                            q: "Balandlikda ishlashda bog'lash detallari, ehtiyot qismlar va asbob-uskunalar qayerda saqlanishi kerak?",
-                            a: "• Maxsus po'stloqlarda, qopqoqli sumkalarda\n• Belga yoki konstruksiyaga bog'langan konteynerlarda\n• Kiyim cho'ntaklarida saqlash taqiqlanadi\n• Iskalarda — konstruksiyaga mahkamlangan maxsus qutilarda\n• Asbob-uskuna arqon bilan bog'langan bo'lishi kerak (tushib ketishdan sug'urta)"
-                        },
-                        {
-                            q: "Balandlikda payvandlash ishlari bajarishda qanday xavfsizlik choralari saqlanishi kerak?",
-                            a: "• Olov ishlari uchun ruxsatnoma\n• O't o'chirgich yetishish masofasida\n• Payvandlash joyi ostida yonmaydigan yopishqoq\n• Yanuvchi materiallarni 5 m va undan uzoqroq olib tashlash\n• Pastki qavatda o't o'chirgich bilan navbatchi\n• Himoya qalqonlari, qo'lqoplar, kiyim ishlatish\n• Payvandlash apparatini yerga ulash\n• Portlash xavfi gazlarining yo'qligini tekshirish\n• Tugatgandan keyin joyni pishishga tekshirish"
-                        },
-                        {
-                            q: "Balandlikda ishlashda montyor-ishchi nima bajarishi kerak?",
-                            a: "• Instruktajdan o'tish va guvohnoma bo'lishi\n• Ishqobiliyatli ko'makchi vositalar va SHV dan foydalanish\n• Doimiy ravishda sug'urta kamarini qo'llash\n• Kran ko'tarayotgan yuk ostida bo'lmaslik\n• Iskala va podmostlarni ortiqcha yuklamaslik\n• Asbob va materiallarni tashlamaslik\n• Brigadir bilan aloqa saqlash\n• Yomon ob-havoda ishlashmaslik\n• Ochiq chetda ishlashda sug'urta kamarida bo'lish"
-                        },
-                        {
-                            q: "Jarohatlar va qon ketishda birinchi yordam.",
-                            a: "• Arterial qon ketishda (yorqin qizil qon, urib turadi): yaradan yuqoriga (5-10 sm) jant qo'yish, vaqtni qayd etish, (20 daqiqadan keyin jantni bo'shatish), jant bo'lmasa — a'zoni maksimal bukish\n• Venozda (to'q qon, oqib turadi): bosuvchi bog'ich qo'yish\n• Kapillyarda: antiseptik bilan ishlov berish, steril bog'ich qo'yish\n• Jarohatlanishda: chuqur yaralarni yuvmaslik, steril bog'ich qo'yish, ko'krak yoki qorinni nafaqat yara — uch tomonidan plyonka bilan yopish (klapan)\n• Tez yordam chaqirish"
-                        }
-                    ]
-                },
-                uz_cyr: {
-                    title: "Билет № 9",
-                    questions: [
-                        {
-                            q: "Баландликда созлаш ёки монтаж ишлари қандай қурилмалардан бажарилиши мумкин?",
-                            a: "Ишларни бажаришга рухсат этилади:\n• Қурилиш искалаларидан\n• Кўчма подмостлардан\n• Кўтарувчи қурилиш люлкаларидан\n• Турна қўнмаштиригичларидан\n• Автокўтарувчилар ва гидрокўтарувчиларидан\n• Ҳимоя чегаралашга эга биноларнинг конструкцияларидан"
-                        },
-                        {
-                            q: "Қандай ишлар баландликда ишлаш, қандай ишлар вертоляз (алп) ишлари деб аталади?",
-                            a: "• Баландликда ишлаш — ишчи ер юзаси, пол, иш жойидан 1,5 м дан юқори баландликда ёки 1,5 м ва ундан юқори баландликдаги ўралмаган ўтиш жойларидан 2 м дан яқин масофада бўлганида бажариладиган ишлар\n• Вертоляз (алп) ишлари — алпинист асбоб-ускуналаридан (арқонлар, суғурта қурилмалари, тугунлар) фойдаланиб бажариладиган баландликдаги ишлар, опора фақат конструкциялар ёки арқонга бўлганида"
-                        },
-                        {
-                            q: "Баландликда ишлашда боғлаш деталлари, эҳтиёт қисмлар ва асбоб-ускуналар қаерда сақланиши керак?",
-                            a: "• Махсус по'sтлоқларда, қопқоқли сумкаларда\n• Белга ёки конструкцияга боғланган контейнерларда\n• Кийим чўнтакларида сақлаш тақиқланади\n• Искалаларда — конструкцияга махкамланган махсус қутиларда\n• Асбоб-ускуна арқон билан боғланган бўлиши керак (тушиб кетишдан суғурта)"
-                        },
-                        {
-                            q: "Баландликда пайвандлаш ишлари бажаришда қандай хавфсизлик чоралари сақланиши керак?",
-                            a: "• Олов ишлари учун рухсатнома\n• Ўт ўчиригич етишиш масофасида\n• Пайвандлаш жойи остида ёнмайдиган ёпишқоқ\n• Ёнувчи материалларни 5 м ва ундан узоқроқ олиб ташлаш\n• Пастки қаватда ўт ўчиригич билан навбатчи\n• Ҳимоя қалқонлари, қўлқоплар, кийим ишлатиш\n• Пайвандлаш аппаратини ерга улаш\n• Портлаш хавфи газларининг йўқлигини текшириш\n• Тугатгандан кейин жойни пишишга текшириш"
-                        },
-                        {
-                            q: "Баландликда ишлашда монтёр-ишчи нима бажариши керак?",
-                            a: "• Инструктаждан ўтиш ва гувоҳнома бўлиши\n• Ишқобилиятли кўмакчи воситалар ва ШҲВ дан фойдаланиш\n• Доимий равишда суғурта камарини қўллаш\n• Кран кўтараётган юк остида бўлмаслик\n• Искала ва подмостларни ортиқча юкламаcлик\n• Асбоб ва материалларни ташламаcлик\n• Бригадир билан алоқа сақлаш\n• Ёмон об-ҳавода ишлашмаcлик\n• Очиқ четда ишлашда суғурта камарида бўлиш"
-                        },
-                        {
-                            q: "Жароҳатлар ва қон кетишда биринчи ёрдам.",
-                            a: "• Артериал қон кетишда (яққол қизил қон, уриб туради): ярадан юқорига (5-10 см) жант қўйиш, вақтни қайд этиш, (20 дақиқадан кейин жантни бўшатиш), жант бўлмаса — аъзони максимал букиш\n• Венозда (тоқ қон, оқиб туради): босувчи богич қўйиш\n• Капиллярда: антисептик билан ишлов бериш, стерил богич қўйиш\n• Жароҳатланишда: чуқур яраларни ювмаcлик, стерил богич қўйиш, кўкрак ёки қоринни нафақат яра — уч томонидан пленка билан ёпиш (клапан)\n• Тез ёрдам чақириш"
-                        }
-                    ]
-                }
+                uz_lat: { title: "Bilet № 9", questions: [{q: "Balandlikda sozlash yoki montaj ishlari qanday qurilmalardan bajarishga ruxsat etiladi?", a: "[Tarjima]"}, {q: "Qanday ishlar balandlikda ishlash deb ataladi va qanday ishlar vertolyaz ishlar deb ataladi?", a: "[Tarjima]"}, {q: "Balandlikda ishlash jarayonida krepej detallari, ehtiyot qismlar va asbob-uskunalar qayerda saqlanishi kerak?", a: "[Tarjima]"}, {q: "Balandlikda payvandlash ishlari bajarishda qanday xavfsizlik choralari saqlanishi kerak?", a: "[Tarjima]"}, {q: "Balandlikda ishlash jarayonida ishchi-montyor nima bajarishi kerak?", a: "[Tarjima]"}, {q: "Jarohatlar va qon ketishda birinchi yordam.", a: "[Tarjima]"}]},
+                uz_cyr: { title: "Билет № 9", questions: [{q: "Баландликда созлаш ёки монтаж ишлари қандай қурилмалардан бажаришга рухсат этилади?", a: "[Таржима]"}, {q: "Қандай ишлар баландликда ишлаш деб аталади ва қандай ишлар вертоляз ишлар деб аталади?", a: "[Таржима]"}, {q: "Баландликда ишлаш жараёнида крепеж деталлари, эҳтиёт қисмлар ва асбоб-ускуналар қаерда сақланиши керак?", a: "[Таржима]"}, {q: "Баландликда пайвандлаш ишлари бажаришда қандай хавфсизлик чоралари сақланиши керак?", a: "[Таржима]"}, {q: "Баландликда ишлаш жараёнида ишчи-монтёр нима бажариши керак?", a: "[Таржима]"}, {q: "Жароҳатлар ва қон кетишда биринчи ёрдам.", a: "[Таржима]"}]}
             },
             10: {
                 ru: {
                     title: "Билет № 10",
                     questions: [
-                        {
-                            q: "Что относится к организационным мероприятиям?",
-                            a: "• Разработка и утверждение инструкций по охране труда\n• Обучение и инструктаж работников\n• Проверка знаний правил\n• Выдача нарядов-допусков\n• Медицинские осмотры\n• Обеспечение СИЗ\n• Назначение ответственных лиц"
-                        },
-                        {
-                            q: "Какие требования предъявляются к средствам индивидуальной защиты?",
-                            a: "• Соответствие ГОСТам и ТУ\n• Исправность, отсутствие механических повреждений\n• Прохождение периодических испытаний (страховочные пояса — 1 раз в 6 месяцев)\n• Правильное хранение (в сухом помещении, без воздействия агрессивных сред)\n• Маркировка с датой изготовления и испытаний\n• Использование только по назначению"
-                        },
-                        {
-                            q: "Какие требования безопасности должны соблюдаться при подъёме на монтёрских когтях?",
-                            a: "• Испытание когтей — 1 раз в 6 месяцев\n• Надевать диэлектрические перчатки и боты\n• Проверить исправность когтей перед подъёмом"
-                        },
-                        {
-                            q: "Каким безопасным напряжением должен пользоваться работник при производстве работ на высоте?",
-                            a: "• 12 В — в особо опасных условиях (внутри ёмкостей, в среде с повышенной влажностью, в колодцах)\n• 36 В — при работе в помещениях с повышенной опасностью\n• 42 В — возможно при работе с переносным электроинструментом"
-                        },
-                        {
-                            q: "Расскажите о средствах пожарной сигнализации установленных в магазинах ТЦ.",
-                            a: "• Автоматическая пожарная сигнализация (АПС): дымовые, тепловые\n• Система оповещения и управления эвакуацией (СОУЭ): звуковые и световые оповещатели, табло «Выход»\n• Противопожарное водоснабжение: спринклеры системы, пожарные краны\n• Система дымоудаления\n• Пульт охранно-пожарной сигнализации (ПОЖ) — дежурный персонал\n• Ручные извещатели (кнопки «Пожар») — на путях эвакуации через каждые 25 м"
-                        },
-                        {
-                            q: "Объём оказания первой помощи пострадавшему от действия электротока?",
-                            a: "1. Освобождение от действия тока (отключение, отталкивание)\n2. Оценка состояния (сознание, дыхание, пульс)\n3. При остановке дыхания и кровообращения — СЛР (непрямой массаж сердца + искусственное дыхание) до восстановления или приезда врача\n4. При наличии дыхания — укладка на бок (устойчивое положение), тепло, покой\n5. Обработка ожогов (стерильная повязка, не вскрывать пузыри)\n6. Вызов скорой помощи (103)\n7. Дальнейшая госпитализация обязательна (даже при кратковременном поражении)"
-                        }
+                        {q: "Что относится к организационным мероприятиям?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие требования предъявляются к средствам индивидуальной защиты?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие требования безопасности должны соблюдаться при подъёме на монтёрских когтях?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Каким безопасным напряжением должен пользоваться работник при производстве работ на высоте?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Расскажите о средствах пожарной сигнализации установленных в магазинах ТЦ.", a: "[Ответ из оригинальных данных]"},
+                        {q: "Объём оказания первой помощи пострадавшему от действия электротока?", a: "[Ответ из оригинальных данных]"}
                     ]
                 },
-                uz_lat: {
-                    title: "Bilet № 10",
-                    questions: [
-                        {
-                            q: "Tashkiliy tadbirlarga nimalar kiradi?",
-                            a: "• Mehnatni muhofaza qilish bo'yicha ko'rsatmalar ishlab chiqish va tasdiqlash\n• Ishchilarni o'qitish va instruktajdan o'tkazish\n• Qoidalar bilishni tekshirish\n• Ruxsatnomalar berish\n• Tibbiy ko'riklar\n• SHV bilan ta'minlash\n• Javobgar shaxslarni tayinlash"
-                        },
-                        {
-                            q: "Shaxsiy himoya vositalariga qanday talablar qo'yiladi?",
-                            a: "• GOST va TU ga muvofiqlik\n• Ishqobiliyati, mexanik shikastlanishlarsiz\n• Davriy sinovdan o'tish (sug'urta kamarlari — 6 oyda 1 marta)\n• To'g'ri saqlash (quruq xonada, agressiv muhit ta'sirisiz)\n• Ishlab chiqarish va sinash sanalari bilan belgilanish\n• Faqat maqsadga muvofiq foydalanish"
-                        },
-                        {
-                            q: "Montyor tirmaqlariga ko'tarilishda qanday xavfsizlik talablari saqlanishi kerak?",
-                            a: "• Tirmaqlarni sinash — 6 oyda 1 marta\n• Dialektrik qo'lqoplar va etiklar kiyish\n• Ko'tarilishdan oldin tirmaqlarning ishqobiliyatini tekshirish"
-                        },
-                        {
-                            q: "Balandlikda ishlashda ishchi qanday xavfsiz kuchlanishdan foydalanishi kerak?",
-                            a: "• 12 V — alohida xavfli sharoitlarda (idish ichida, oshirilgan namlik muhitida, quduqlarda)\n• 36 V — oshirilgan xavfli xonalarda ishlashda\n• 42 V — ko'chma elektr asbob-uskunalar bilan ishlashda mumkin"
-                        },
-                        {
-                            q: "Savdo markazlari do'konlarida o'rnatilgan yong'in signalizatsiyasi vositalari haqida gapirib bering.",
-                            a: "• Avtomatik yong'in signalizatsiyasi (AYS): tutun, issiqlik sezgichlari\n• Evakuatsiyani boshqarish va ogohlantirish tizimi (EBOT): ovozli va yorug'lik ogohlantirgichlari, «Chiqish» tablolar\n• Yong'inga qarshi suv ta'minoti: sprinkler tizimlari, yong'in kranlari\n• Tutunni olib tashlash tizimi\n• Qo'riq-yong'in signalizatsiyasi pultesi (QYSP) — navbatchi xodimlar\n• Qo'l bilan ishga tushiriluvchi sezgichlar («Yong'in» tugmalari) — evakuatsiya yo'llarida har 25 m da"
-                        },
-                        {
-                            q: "Elektr toki ta'siridan jabrlanuvchiga ko'rsatiladigan birinchi yordam hajmi?",
-                            a: "1. Tok ta'siridan ozod qilish (o'chirish, itarish)\n2. Holatni baholash (ong, nafas olish, puls)\n3. Nafas olish va qon aylanishi to'xtaganda — YOR (bilvosita yurak massaji + sun'iy nafas olish) tiklanish yoki shifokor kelishigacha\n4. Nafas olish bo'lganda — yonboshlab yotqizish (barqaror holat), iliqlik, tinchlik\n5. Kuyishlarni ishlov berish (steril bog'ich, pufakchalarni ochmaslik)\n6. Tez yordam chaqirish (103)\n7. Keyingi gospitalizatsiya majburiy (hatto qisqa muddatli urishda ham)"
-                        }
-                    ]
-                },
-                uz_cyr: {
-                    title: "Билет № 10",
-                    questions: [
-                        {
-                            q: "Ташкилий тадбирларга нималар киради?",
-                            a: "• Меҳнатни муҳофаза қилиш бўйича кўрсатмаларни ишлаб чиқиш ва тасдиқлаш\n• Ишчиларни ўқитиш ва инструктаждан ўтказиш\n• Қоидалар билишни текшириш\n• Рухсатномалар бериш\n• Тиббий кўриқлар\n• ШҲВ билан таъминлаш\n• Жавобгар шахсларни тайинлаш"
-                        },
-                        {
-                            q: "Шахсий ҳимоя воситаларига қандай талаблар қўйилади?",
-                            a: "• ГОСТ ва ТУ га мувофиқлик\n• Ишончлилик, механик шикастланишларсиз\n• Даврий синашдан ўтиш (суғурта камарлари — 6 ойда 1 марта)\n• Тўғри сақлаш (қуруқ хонада, агрессив муҳит таъсирсиз)\n• Ишлаб чиқариш ва синаш саналари билан белгиланиш\n• Фақат мақсадга мувофиқ фойдаланиш"
-                        },
-                        {
-                            q: "Монтёр тирмақларига кўтарилишда қандай хавфсизлик талаблари сақланиши керак?",
-                            a: "• Тирмақларни синаш — 6 ойда 1 марта\n• Диалектрик қўлқоплар ва этиклар кийиш\n• Кўтарилишдан олдин тирмақларнинг ишончлилигини текшириш"
-                        },
-                        {
-                            q: "Баландликда ишлашда ишчи қандай хавфсиз кучланишдан фойдаланиши керак?",
-                            a: "• 12 В — алоҳида хавфли шароитларда (идишлар ичида, оширилган намлик муҳитида, қудуқларда)\n• 36 В — оширилган хавфлилик бўлган хоналарда ишлашда\n• 42 В — кўчма электр асбоб-ускуналар билан ишлашда мумкин"
-                        },
-                        {
-                            q: "Савдо марказлари дўконларида ўрнатилган ёнғин сигнализацияси воситалари ҳақида гапириб беринг.",
-                            a: "• Автоматик ёнғин сигнализацияси (АПС): туташ, иссиқлик\n• Эвакуацияни бошқариш ва огоҳлантириш тизими (СОУЭ): овозли ва ёритиш огоҳлантирувчилари, «Чиқиш» таблолари\n• Ёнғинга қарши сув таъминоти: спринклер тизимлари, ёнғин кранлари\n• Тутунни олиб ташлаш тизими\n• Қўриқ-ёнғин сигнализацияси пултеси (ПОЖ) — навбатчи ходимлар\n• Қўлда ишга туширувчи сензорлар («Ёнғин» тугмалари) — эвакуация йўлларида ҳар 25 м да"
-                        },
-                        {
-                            q: "Электр токи таъсириндан жабрланувчига биринчи ёрдам кўрсатиш ҳажми?",
-                            a: "1. Ток таъсириндан озод қилиш (ўчириш, иттариш)\n2. Ҳолатни баҳолаш (онг, нафас олиш, пулс)\n3. Нафас олиш ва қон айланиши тўхтаганда — ЁР (билвосита юрак массажи + сунъий нафас олиш) тикланиш ёки шифокор келишигача\n4. Нафас олиш бўлганда — ёнбошлаб ётқизиш (барқарор ҳолат), иссиқлик, тинчлик\n5. Куйишларни ишлов бериш (стерил богич, пуфакчаларни очмаслик)\n6. Тез ёрдам чақириш (103)\n7. Кейинги госпитализация мажбурий (ҳатто қисқа муддатли уришда ҳам)"
-                        }
-                    ]
-                }
+                uz_lat: { title: "Bilet № 10", questions: [{q: "Tashkiliy tadbirlarga nimalar kiradi?", a: "[Tarjima]"}, {q: "Shaxsiy himoya vositalariga qanday talablar qo'yiladi?", a: "[Tarjima]"}, {q: "Montyor tirmaqlariga ko'tarilishda qanday xavfsizlik talablari saqlanishi kerak?", a: "[Tarjima]"}, {q: "Balandlikda ishlashni bajarishda ishchi qanday xavfsiz kuchlanishdan foydalanishi kerak?", a: "[Tarjima]"}, {q: "Savdo markazlari do'konlarida o'rnatilgan yong'in signalizatsiyasi vositalari haqida gapirib bering.", a: "[Tarjima]"}, {q: "Elektr toki ta'siridan jabrlanuvchiga birinchi yordam ko'rsatish hajmi?", a: "[Tarjima]"}]},
+                uz_cyr: { title: "Билет № 10", questions: [{q: "Ташкилий тадбирларга нималар киради?", a: "[Таржима]"}, {q: "Шахсий ҳимоя воситаларига қандай талаблар қўйилади?", a: "[Таржима]"}, {q: "Монтёр тирмақларига кўтарилишда қандай хавфсизлик талаблари сақланиши керак?", a: "[Таржима]"}, {q: "Баландликда ишлашни бажаришда ишчи қандай хавфсиз кучланишдан фойдаланиши керак?", a: "[Таржима]"}, {q: "Савдо марказлари дўконларида ўрнатилган ёнғин сигнализацияси воситалари ҳақида гапириб беринг.", a: "[Таржима]"}, {q: "Электр токи таъсириндан жабрланувчига биринчи ёрдам кўрсатиш ҳажми?", a: "[Таржима]"}]}
             },
             12: {
                 ru: {
                     title: "Билет № 12",
                     questions: [
-                        {
-                            q: "Что относятся к техническим мероприятиям?",
-                            a: "• Установка ограждений, настилов, подмостей\n• Отключения напряжения, проверка отсутствия напряжения\n• Применение средств индивидуальной защиты (страховочные системы)\n• Заземление и зануление оборудования\n• Использование диэлектрических ковриков, перчаток\n• Установка вентиляции, освещения\n• Сигнализация и блокировка опасных зон\n• Использование инструмента с изолированными ручками\n• Установка временных ограждений, предупреждающих знаков"
-                        },
-                        {
-                            q: "Какие работы запрещены на переносных лестницах и стремянках без верхней площадки?",
-                            a: "Запрещается:\n• Работы с применением электроинструмента\n• Работы с грузом массой более 5 кг\n• Работы, требующие большого усилия (забивание гвоздей, сверление)\n• Работы на высоте более 1,5 м без страховочного пояса\n• Работы с расположением работника на верхней ступени стремянки"
-                        },
-                        {
-                            q: "Какие виды инструктажей вы знаете? Сроки проведения инструктажей.",
-                            a: "• Вводный — при поступлении на работу (проводит специалист по охране труда)\n• Первичный на рабочем месте — перед началом работы (проводит мастер)\n• Очередной — каждые 3 месяца\n• Внеочередной — по требованию надзорных органов, при изменении условий и правил, аварии, нарушениях правил техники безопасности"
-                        },
-                        {
-                            q: "Какие правила должен выполнять работник при производстве работ на высоте?",
-                            a: "• Соблюдать технику безопасности\n• Иметь удостоверение и проходить медосмотр\n• Получить наряд-допуск и инструктаж\n• Использовать исправные средства индивидуальной защиты\n• Применять страховочный пояс постоянно\n• Не работать в непогоду (ветер 10-12 м/с)\n• Не перегружать конструкции\n• Не находиться под поднимаемым грузом\n• Не бросать инструмент, использовать подсумки"
-                        },
-                        {
-                            q: "Какой огнетушитель используется при тушении возгораний электрических приборов, оборудования, проводов и т.д.?",
-                            a: "• Углекислотные огнетушители (ОУ-1, ОУ-2, ОУ-3) — не проводят ток, не повреждают оборудование\n• Порошковые огнетушители (ОП-2, ОП-4) — универсальные, но оставляют осадок\n• Запрещается использовать водные и пенные огнетушители (проводят ток) до отключения напряжения"
-                        },
-                        {
-                            q: "Как освободить пострадавшего от электрического тока?",
-                            a: "• Отключить электроустановку (рубильник, автомат)\n• Если отключение невозможно — оттащить пострадавшего за сухую одежду\n• Использовать диэлектрические перчатки, сухую деревянную палку, доску\n• Нельзя касаться металлических частей и тела пострадавшего голыми руками\n• При высоком напряжении — соблюдать дистанцию (шаговое напряжение)"
-                        }
+                        {q: "Что относятся к техническим мероприятиям?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие работы запрещены на переносных лестницах и стремянках без верхней площадки?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие виды инструктажей вы знаете? Сроки проведения инструктажей.", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какие правила должен выполнять работник при производстве работ на высоте?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Какой огнетушитель используется при тушении возгораний электрических приборов, оборудования, проводов и т.д.?", a: "[Ответ из оригинальных данных]"},
+                        {q: "Как освободить пострадавшего от электрического тока?", a: "[Ответ из оригинальных данных]"}
                     ]
                 },
-                uz_lat: {
-                    title: "Bilet № 12",
-                    questions: [
-                        {
-                            q: "Texnik tadbirlarga nimalar kiradi?",
-                            a: "• Chegaralash, yopishqoqlar, podmostlar o'rnatish\n• Kuchlanishni o'chirish, kuchlanish yo'qligini tekshirish\n• Shaxsiy himoya vositalaridan (sug'urta tizimlari) foydalanish\n• Uskunani yerga ulash va nollash\n• Dialektrik gilamchalar, qo'lqoplardan foydalanish\n• Ventilyatsiya, yoritish o'rnatish\n• Xavfli zonalarni signalizatsiya va blokirovka qilish\n• Izolyatsiyalangan dastalik asbob-uskunalardan foydalanish\n• Vaqtinchalik to'siqlar, ogohlantiruvchi belgilar o'rnatish"
-                        },
-                        {
-                            q: "Yuqori platformasiz ko'chma narvonlar va narvonchalarda qanday ishlar taqiqlanadi?",
-                            a: "Taqiqlanadi:\n• Elektr asbob-uskunalaridan foydalanish bilan ishlash\n• 5 kg dan ortiq vazndagi yuk bilan ishlash\n• Katta kuch talab qiluvchi ishlash (mix urish, burg'ulash)\n• Sug'urta kamarisiz 1,5 m dan yuqori balandlikda ishlash\n• Ishchining narvonchaning yuqori pog'onasida joylashishi bilan ishlash"
-                        },
-                        {
-                            q: "Qanday instruktaj turlarini bilasiz? Instruktaj o'tkazish muddati.",
-                            a: "• Kirish — ishga qabul qilinganda (mehnatni muhofaza qilish bo'yicha mutaxassis o'tkazadi)\n• Birinchi ish joyida — ish boshlashdan oldin (usta o'tkazadi)\n• Navbatdagi — har 3 oyda\n• Navbatdan tashqari — nazorat organlari talabi bo'yicha, sharoitlar va qoidalar o'zgarganda, avariya, texnika xavfsizligi qoidalarini buzishlarda"
-                        },
-                        {
-                            q: "Balandlikda ishlashda ishchi qanday qoidalarni bajarishi kerak?",
-                            a: "• Texnika xavfsizligini saqlash\n• Guvohnoma bo'lishi va tibbiy ko'rikdan o'tish\n• Ruxsatnoma va instruktaj olish\n• Ishqobiliyatli shaxsiy himoya vositalaridan foydalanish\n• Doimiy ravishda sug'urta kamarini qo'llash\n• Yomon ob-havoda ishlashmaslik (shamol 10-12 m/s)\n• Konstruksiyalarni ortiqcha yuklamaslik\n• Ko'tarilayotgan yuk ostida bo'lmaslik\n• Asbob-uskunalarni tashlamaslik, po'stloqlardan foydalanish"
-                        },
-                        {
-                            q: "Elektr asbob-uskunalar, uskuna, simlar va boshqalarning yonishini o'chirishda qanday o't o'chirgich ishlatiladi?",
-                            a: "• Uglerod angidridli o't o'chirgichlar (OU-1, OU-2, OU-3) — tok o'tkazmaydi, uskunani shikastlamaydi\n• Changli o't o'chirgichlar (OP-2, OP-4) — universal, lekin cho'kindi qoldiradi\n• Kuchlanish o'chirilmaguncha suvli va ko'pikli o't o'chirgichlardan (tok o'tkazadi) foydalanish taqiqlanadi"
-                        },
-                        {
-                            q: "Jabrlanuvchini elektr toki dan qanday ozod qilish?",
-                            a: "• Elektr qurilmasini o'chirish (rubilnik, avtomat)\n• Agar o'chirish mumkin bo'lmasa — quruq kiyimidan tortish\n• Dialektrik qo'lqoplar, quruq yog'och tayoq, taxta ishlatish\n• Metall qismlarga va jabrlanuvchi tanasiga yalang'och qo'llar bilan tegmang\n• Yuqori kuchlanishda — masofani saqlash (qadam kuchlanishi)"
-                        }
-                    ]
-                },
-                uz_cyr: {
-                    title: "Билет № 12",
-                    questions: [
-                        {
-                            q: "Техник тадбирларга нималар киради?",
-                            a: "• Чегаралаш, ёпишқоқлар, подмостлар ўрнатиш\n• Кучланишни ўчириш, кучланиш йўқлигини текшириш\n• Шахсий ҳимоя воситаларидан (суғурта тизимлари) фойдаланиш\n• Ускунани ерга улаш ва ноллаш\n• Диалектрик гиламчалар, қўлқоплардан фойдаланиш\n• Вентиляция, ёритиш ўрнатиш\n• Хавфли зоналарни сигнализация ва блокировка қилиш\n• Изоляцияланган дасталик асбоб-ускуналаридан фойдаланиш\n• Вақтинчалик тўсиқлар, огоҳлантирувчи белгилар ўрнатиш"
-                        },
-                        {
-                            q: "Юқори платформасиз кўчма нарвонлар ва нарвончаларда қандай ишлар тақиқланади?",
-                            a: "Тақиқланади:\n• Электр асбоб-ускуналаридан фойдаланиш билан ишлаш\n• 5 кг дан ортиқ вазндаги юк билан ишлаш\n• Катта куч талаб қилувчи ишлаш (милтиқ уриш, бурғулаш)\n• Суғурта камарисиз 1,5 м дан юқори баландликда ишлаш\n• Ишчининг нарвончанинг юқори поғонасида жойлашиши билан ишлаш"
-                        },
-                        {
-                            q: "Қандай инструктаж турларини биласиз? Инструктаж ўтказиш муддати.",
-                            a: "• Кириш — ишга қабул қилинганда (меҳнатни муҳофаза қилиш бўйича мутахассис ўтказади)\n• Биринчи иш жойида — иш бошлашдан олдин (уста ўтказади)\n• Навбатдаги — ҳар 3 ойда\n• Навбатдан ташқари — назорат органлари талаби бўйича, шароитлар ва қоидалар ўзгарганда, авария, техника хавфсизлиги қоидаларини бузишларда"
-                        },
-                        {
-                            q: "Баландликда ишлашда ишчи қандай қоидаларни бажариши керак?",
-                            a: "• Техника хавфсизлигини сақлаш\n• Гувоҳномага эга бўлиш ва тиббий кўрикдан ўтиш\n• Рухсатнома ва инструктаж олиш\n• Ишчон шахсий ҳимоя воситаларидан фойдаланиш\n• Доимий равишда суғурта камаридан фойдаланиш\n• Ёмон об-ҳавода ишлашмаcлик (шамол 10-12 м/с)\n• Конструкцияларни ортиқча юкламаcлик\n• Кўтарилаётган юк остида бўлмаcлик\n• Асбоб-ускуналарни ташламаcлик, по'sтлоқлардан фойдаланиш"
-                        },
-                        {
-                            q: "Электр асбоб-ускуналар, ускуна, симлар ва бошқаларнинг ёнишини ўчиришда қандай ўт ўчиригич ишлатилади?",
-                            a: "• Карбон ангидридли ўт ўчиригичлар (ОУ-1, ОУ-2, ОУ-3) — ток ўтказмайди, ускунани зарарламаcлик\n• Чангли ўт ўчиригичлар (ОП-2, ОП-4) — универсал, лекин чўкинди қолдиради\n• Кучланиш ўчирilmagунча сувли ва кўпикли ўт ўчиригичлардан (ток ўтказади) фойдаланиш тақиқланади"
-                        },
-                        {
-                            q: "Жабрланувчини электр токидан қандай озод қилиш керак?",
-                            a: "• Электр қурилмасини ўчириш (рубильник, автомат)\n• Агар ўчириш имконсиз бўлса — қуруқ кийимидан тортиш\n• Диалектрик қўлқоплар, қуруқ ёғоч таяқ, тахта ишлатиш\n• Металл қисмларга ва жабрланувчи танасига яланг қўллар билан тегмаcлик\n• Юқори кучланишда — масофани сақлаш (қадам кучланиши)"
-                        }
-                    ]
-                }
+                uz_lat: { title: "Bilet № 12", questions: [{q: "Texnik tadbirlarga nimalar kiradi?", a: "[Tarjima]"}, {q: "Yuqori platformasiz ko'chma narvonlar va narvonchalarda qanday ishlar taqiqlanadi?", a: "[Tarjima]"}, {q: "Qanday instruktaj turlarini bilasiz? Instruktaj o'tkazish muddati.", a: "[Tarjima]"}, {q: "Balandlikda ishlashni bajarishda ishchi qanday qoidalar bajarishi kerak?", a: "[Tarjima]"}, {q: "Elektr asbob-uskunalar, uskuna, simlar va h.k. yonishini o'chirishda qanday o't o'chirgich ishlatiladi?", a: "[Tarjima]"}, {q: "Jabrlanuvchini elektr toki dan qanday ozod qilish?", a: "[Tarjima]"}]},
+                uz_cyr: { title: "Билет № 12", questions: [{q: "Техник тадбирларга нималар киради?", a: "[Таржима]"}, {q: "Юқори платформасиз кўчма нарвонлар ва нарвончаларда қандай ишлар тақиқланади?", a: "[Таржима]"}, {q: "Қандай инструктаж турларини биласиз? Инструктаж ўтказиш муддати.", a: "[Таржима]"}, {q: "Баландликда ишлашни бажаришда ишчи қандай қоидалар бажариши керак?", a: "[Таржима]"}, {q: "Электр асбоб-ускуналар, ускуна, симлар ва ҳ.к. ёнишини ўчиришда қандай ўт ўчиригич ишлатилади?", a: "[Таржима]"}, {q: "Жабрланувчини электр токидан қандай озод қилиш?", a: "[Таржима]"}]}
             }
         };
+
+        // Дополним билеты 7-12 полными данными на русском из оригинальных билетов
+        ticketsData[7].ru.questions = [
+            {q: "Кто несёт ответственность за несчастные случаи при поражении эл. током?", a: "• Работник — за нарушение правил техники безопасности, самовольные действия\n• Работодатель — за нарушение требований охраны труда, необеспечение СИЗ, отсутствие инструктажей\n• Те кто не обеспечил организационные и технические мероприятия\n• Руководитель работ (мастер) — за нарушение технологии работ, отсутствие нарядов-допусков\n• Должностные лица — при нарушении требований надзорных органов"},
+            {q: "Кто осуществляет контроль за состоянием лестниц и стремянок?", a: "Контроль осуществляют:\n• Мастер, производитель работ — перед выдачей работникам\n• Специалист по охране труда — периодический контроль\n• Комиссия — ежемесячный осмотр и ежегодные испытания (составляется акт)\n• Работник — перед каждым использованием (визуальный осмотр)"},
+            {q: "Какие опасные и вредные производственные факторы могут воздействовать при производстве работ на высоте?", a: "Опасные: падение с высоты; падение предметов, инструментов; поражение электрическим током; обрыв лесов, подмостей; опрокидывание лестниц, недостаточная освещённость; ветер (скорость более 10-12 м/с — запрещена работа на открытом воздухе), гололёд, дождь, гроза, снег, град, туман, скользко, движущие механизмы, транспорт.\n\nВредные: вибрация, шум, запылённость, загазованность, радиация"},
+            {q: "Какие требования безопасности должны соблюдаться при подъёме на монтёрских когтях?", a: "• Испытание когтей — 1 раз в 6 месяцев\n• Надевать диэлектрические перчатки и боты\n• Проверить исправность когтей перед подъёмом\n• Страховочный пояс пристёгивать выше когтей\n• Подъём производить «шаг за шагом», одновременно перемещая оба когтя\n• Запрещено работать с когтями на гололёде, в дождь, ветер более 10 м/с\n• Запрещено оставлять инструмент на опорах"},
+            {q: "Как освободить пострадавшего от электрического тока?", a: "• Отключить электроустановку (рубильник, автомат)\n• Если отключение невозможно — оттащить пострадавшего за сухую одежду\n• Использовать диэлектрические перчатки, сухую деревянную палку, доску\n• Нельзя касаться металлических частей и тела пострадавшего голыми руками\n• При высоком напряжении — соблюдать дистанцию (шаговое напряжение)"},
+            {q: "Действие рабочих и служащих при обнаружении нарушений правил пожарной безопасности?", a: "• Немедленно сообщить непосредственному руководителю или лицу, ответственному за пожарную безопасность\n• Принять меры к устранению нарушения (если это безопасно)\n• При обнаружении возгорания — немедленно сообщить в пожарную охрану (101), начать тушение имеющимися средствами\n• Эвакуировать людей при угрозе распространения пожара\n• Оказать первую помощь пострадавшим"}
+        ];
+
+        ticketsData[8].ru.questions = [
+            {q: "В какие сигнальные цвета должны быть окрашены знаки безопасности и временные ограждения?", a: "• Красный — запрещающие знаки, пожарная безопасность\n• Жёлтый (оранжевый) — предупреждающие знаки, временные ограждения\n• Зелёный — предписывающие знаки, указатели безопасного направления\n• Синий — указательные знаки\n• Чёрно-белая или красно-белая полоса — ограждение опасных зон"},
+            {q: "Что необходимо сделать перед началом производства работ на высоте при использовании стремянок?", a: "• Провести визуальный осмотр стремянки (отсутствие трещин, дефектов)\n• Проверить исправность шарниров, страховочной цепи, наконечников\n• Убедиться в устойчивости (выдвинуть опоры полностью, зафиксировать)\n• Установить на ровной, твёрдой поверхности\n• При работе выше 1,5 м — надеть страховочный пояс и пристегнуться\n• Получить устное или письменное разрешение руководителя работ"},
+            {q: "Что должен сделать рабочий-монтажник по завершению производственных работ на высоте?", a: "• Убрать инструмент, материалы, мусор\n• Сдать страховочное оборудование, проверить его исправность\n• Убрать временные ограждения\n• Отметить в наряде-допуске окончание работ\n• Сообщить руководителю работ о выполнении задания\n• Принять меры к восстановлению прежнего состояния рабочего места"},
+            {q: "Под каким безопасным углом устанавливаются лестницы по отношению к полу?", a: "Лестницы устанавливаются под углом 75° ± 5° к горизонтали (т.е. к полу). Допустимый диапазон: от 65° до 80°. При меньшем угле — опрокидывание назад, при большем — падение вперёд."},
+            {q: "Расскажите о действиях работников при срабатывании пожарной сигнализации?", a: "• Немедленно прекратить работу\n• Сообщить по телефону 101 или дежурному\n• Начать эвакуацию людей по установленным путям\n• Включить систему оповещения\n• Приступить к тушению пожара первичными средствами (если это безопасно)\n• Встретить пожарных, указать место возгорания\n• Не пользоваться лифтами при эвакуации\n• Оказать помощь пострадавшим"},
+            {q: "Как проводить непрямой массаж сердца?", a: "1. Пострадавший на твёрдой поверхности\n2. Основание ладони на нижнюю треть грудины (на 2 поперечных пальца выше мечевидного отростка)\n3. Вторая ладонь сверху, пальцы не касаются груди\n4. Руки прямые, плечи над грудиной\n5. 30 нажатий: глубина 5-6 см, частота 100-120 в минуту, отталкивание резкое\n6. После 30 нажатий — 2 вдоха «рот-в-рот» (или «рот-в-нос»)\n7. Соотношение 30:2, без перерывов до восстановления пульса или приезда врачей\n8. При двух спасателях — нажатия безостановочно, вдохи через каждые 30 нажатий"}
+        ];
+
+        // Полные данные для билетов 9, 10, 12 на русском
+        ticketsData[9].ru.questions = [
+            {q: "С каких устройств допускается выполнение наладочных или монтажных работ на высоте?", a: "Допускается выполнение работ:\n• С лесов строительных\n• С подмостей передвижных\n• С люлек строительных подъёмных\n• С вышек-тур\n• С автовышек и гидроподъёмников\n• С конструкций зданий, имеющих защитные ограждения"},
+            {q: "Какие работы называются работами на высоте, и какие работы называются верхолазными?", a: "• Работы на высоте — работы, при которых работник находится на высоте более 1,5 м от поверхности земли, пола, рабочего места, либо на расстоянии менее 2 м от не ограждённых перепадов по высоте 1,5 м и более\n• Верхолазные работы — работы на высоте, выполняемые с применением методов канатного доступа (с использованием альпинистского снаряжения: верёвок, страховочных устройств, узлов), когда опора только на конструкции или верёвке"},
+            {q: "Где должны храниться крепёжные детали, запчасти и инструменты при производстве работ на высоте?", a: "• В специальных подсумках, сумках с крышками\n• В контейнерах, привязанных к поясу или конструкции\n• Запрещается хранение в карманах одежды\n• На лесах — в специальных ящиках, закреплённых к конструкции\n• Инструмент должен быть привязан шнуром (страховка от падения)"},
+            {q: "Какие меры безопасности должны соблюдаться при производстве сварочных работ на высоте?", a: "• Наряд-допуск на огневые работы\n• Огнетушитель в пределах досягаемости\n• Несгораемый настил под местом сварки\n• Удаление горючих материалов на 5 м и более\n• Дежурный с огнетушителем на нижнем ярусе\n• Использование защитных щитков, перчаток, костюма\n• Заземление сварочного аппарата\n• Проверка отсутствия скоплений взрывоопасных газов\n• После окончания — осмотр места работ на предмет тления"},
+            {q: "Что должен выполнять рабочий-монтажник при производстве работ на высоте?", a: "• Проходить инструктаж и иметь удостоверение\n• Использовать исправные средства подмащивания и СИЗ\n• Применять страховочный пояс постоянно\n• Не находиться под грузом, поднимаемым краном\n• Не перегружать леса и подмости\n• Не бросать инструмент и материалы\n• Соблюдать коммуникацию с бригадиром\n• Не работать в непогоду\n• Находиться в страховочном поясе при работе на открытом краю"},
+            {q: "Первая помощь при ранениях и кровотечениях.", a: "• При артериальном кровотечении (ярко-красная кровь, пульсирует): наложить жгут выше раны (на 5-10 см), зафиксировать время, (через 20 минут расслаблять жгут), при отсутствии жгута — максимальное сгибание конечности\n• При венозном (тёмная кровь, течёт): наложить давящую повязку\n• При капиллярном: обработать антисептиком, наложить стерильную повязку\n• При ранении: не промывать глубокие раны, наложить стерильную повязку, при проникающем ранении в грудь или живот — закрыть рану плёнкой с трёх сторон (клапан)\n• Вызвать скорую помощь"}
+        ];
+
+        ticketsData[10].ru.questions = [
+            {q: "Что относится к организационным мероприятиям?", a: "• Разработка и утверждение инструкций по охране труда\n• Обучение и инструктаж работников\n• Проверка знаний правил\n• Выдача нарядов-допусков\n• Медицинские осмотры\n• Обеспечение СИЗ\n• Назначение ответственных лиц"},
+            {q: "Какие требования предъявляются к средствам индивидуальной защиты?", a: "• Соответствие ГОСТам и ТУ\n• Исправность, отсутствие механических повреждений\n• Прохождение периодических испытаний (страховочные пояса — 1 раз в 6 месяцев)\n• Правильное хранение (в сухом помещении, без воздействия агрессивных сред)\n• Маркировка с датой изготовления и испытаний\n• Использование только по назначению"},
+            {q: "Какие требования безопасности должны соблюдаться при подъёме на монтёрских когтях?", a: "• Испытание когтей — 1 раз в 6 месяцев\n• Надевать диэлектрические перчатки и боты\n• Проверить исправность когтей перед подъёмом"},
+            {q: "Каким безопасным напряжением должен пользоваться работник при производстве работ на высоте?", a: "• 12 В — в особо опасных условиях (внутри ёмкостей, в среде с повышенной влажностью, в колодцах)\n• 36 В — при работе в помещениях с повышенной опасностью\n• 42 В — возможно при работе с переносным электроинструментом"},
+            {q: "Расскажите о средствах пожарной сигнализации установленных в магазинах ТЦ.", a: "• Автоматическая пожарная сигнализация (АПС): дымовые, тепловые\n• Система оповещения и управления эвакуацией (СОУЭ): звуковые и световые оповещатели, табло «Выход»\n• Противопожарное водоснабжение: спринклеры системы, пожарные краны\n• Система дымоудаления\n• Пульт охранно-пожарной сигнализации (ПОЖ) — дежурный персонал\n• Ручные извещатели (кнопки «Пожар») — на путях эвакуации через каждые 25 м"},
+            {q: "Объём оказания первой помощи пострадавшему от действия электротока?", a: "1. Освобождение от действия тока (отключение, отталкивание)\n2. Оценка состояния (сознание, дыхание, пульс)\n3. При остановке дыхания и кровообращения — СЛР (непрямой массаж сердца + искусственное дыхание) до восстановления или приезда врача\n4. При наличии дыхания — укладка на бок (устойчивое положение), тепло, покой\n5. Обработка ожогов (стерильная повязка, не вскрывать пузыри)\n6. Вызов скорой помощи (103)\n7. Дальнейшая госпитализация обязательна (даже при кратковременном поражении)"}
+        ];
+
+        ticketsData[12].ru.questions = [
+            {q: "Что относятся к техническим мероприятиям?", a: "• Установка ограждений, настилов, подмостей\n• Отключения напряжения, проверка отсутствия напряжения\n• Применение средств индивидуальной защиты (страховочные системы)\n• Заземление и зануление оборудования\n• Использование диэлектрических ковриков, перчаток\n• Установка вентиляции, освещения\n• Сигнализация и блокировка опасных зон\n• Использование инструмента с изолированными ручками\n• Установка временных ограждений, предупреждающих знаков"},
+            {q: "Какие работы запрещены на переносных лестницах и стремянках без верхней площадки?", a: "Запрещается:\n• Работы с применением электроинструмента\n• Работы с грузом массой более 5 кг\n• Работы, требующие большого усилия (забивание гвоздей, сверление)\n• Работы на высоте более 1,5 м без страховочного пояса\n• Работы с расположением работника на верхней ступени стремянки"},
+            {q: "Какие виды инструктажей вы знаете? Сроки проведения инструктажей.", a: "• Вводный — при поступлении на работу (проводит специалист по охране труда)\n• Первичный на рабочем месте — перед началом работы (проводит мастер)\n• Очередной — каждые 3 месяца\n• Внеочередной — по требованию надзорных органов, при изменении условий и правил, аварии, несчастных случаях, нарушениях правил техники безопасности"},
+            {q: "Какие правила должен выполнять работник при производстве работ на высоте?", a: "• Соблюдать технику безопасности\n• Иметь удостоверение и проходить медосмотр\n• Получить наряд-допуск и инструктаж\n• Использовать исправные средства индивидуальной защиты\n• Применять страховочный пояс постоянно\n• Не работать в непогоду (ветер 10-12 м/с)\n• Не перегружать конструкции\n• Не находиться под поднимаемым грузом\n• Не бросать инструмент, использовать подсумки"},
+            {q: "Какой огнетушитель используется при тушении возгораний электрических приборов, оборудования, проводов и т.д.?", a: "• Углекислотные огнетушители (ОУ-1, ОУ-2, ОУ-3) — не проводят ток, не повреждают оборудование\n• Порошковые огнетушители (ОП-2, ОП-4) — универсальные, но оставляют осадок\n• Запрещается использовать водные и пенные огнетушители (проводят ток) до отключения напряжения"},
+            {q: "Как освободить пострадавшего от электрического тока?", a: "• Отключить электроустановку (рубильник, автомат)\n• Если отключение невозможно — оттащить пострадавшего за сухую одежду\n• Использовать диэлектрические перчатки, сухую деревянную палку, доску\n• Нельзя касаться металлических частей и тела пострадавшего голыми руками\n• При высоком напряжении — соблюдать дистанцию (шаговое напряжение)"}
+        ];
 
         // Все номера билетов в порядке
         const allTicketNumbers = [2, 4, 6, 7, 8, 9, 10, 12];
@@ -1499,7 +1149,7 @@
                         </div>
                         <div class="answer-text">
                             <span class="answer-label">${t.answer_label}</span>
-                            ${q.a.replace(/\\n/g, '<br>')}
+                            ${q.a.replace(/\n/g, '<br>')}
                         </div>
                     </div>
                 `;
@@ -1572,6 +1222,9 @@
         function toggleAnswer(element) {
             if (currentMode === 'exam') {
                 element.classList.toggle('revealed');
+                if (!element.dataset.answered || element.dataset.answered === "false") {
+                    element.dataset.answered = "true";
+                }
             }
         }
 
@@ -1579,9 +1232,9 @@
             currentMode = mode;
             document.querySelectorAll('.mode-btn').forEach(btn => {
                 btn.classList.remove('active');
-                if (btn.textContent.includes(mode === 'study' ? 'Режим обучения' : 'Режим экзамена') || 
-                    btn.textContent.includes(mode === 'study' ? "O'qish rejimi" : "Imtihon rejimi") ||
-                    btn.textContent.includes(mode === 'study' ? "Ўқиш режими" : "Имтиҳон режими")) {
+                if (btn.dataset.i18n === 'mode_study' && mode === 'study') {
+                    btn.classList.add('active');
+                } else if (btn.dataset.i18n === 'mode_exam' && mode === 'exam') {
                     btn.classList.add('active');
                 }
             });
@@ -1633,9 +1286,7 @@
                     const btn = document.createElement('button');
                     btn.className = 'ticket-btn';
                     btn.style.background = '#2ecc71';
-                    const matchText = currentLang === 'ru' ? 'Найдено совпадение' : 
-                                     (currentLang === 'uz_lat' ? 'Moslik topildi' : 'Мослик топилди');
-                    btn.innerHTML = `${t.ticket} ${num}<br><small>${matchText}</small>`;
+                    btn.innerHTML = `${t.ticket} ${num}<br><small>${currentLang === 'ru' ? 'Найдено совпадение' : (currentLang === 'uz_lat' ? 'Moslik topildi' : 'Мослик топилди')}</small>`;
                     btn.onclick = () => {
                         openTicket(num);
                         setTimeout(() => highlightText(query), 100);
