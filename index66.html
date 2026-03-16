@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Подготовка к экзаменам / Imtihonga tayyorgarlik</title>
+    <title>Подготовка к экзаменам / IImtihonga tayyorgarlik</title>
     <style>
         * {
             margin: 0;
@@ -473,12 +473,9 @@
                     <span class="icon">⚡</span>
                     <h2 data-i18n="menu_pte">ПТЭ (Правила технической эксплуатации)</h2>
                     <p data-i18n="desc_pte">Электробезопасность, обслуживание электроустановок</p>
-                    <span class="icon">🛡️</span>
-                    <h2 data-i18n="menu_ptb">ПТБ (Правила техники безопасности)</h2>
-                    <p data-i18n="desc_ptb">Общие правила техники безопасности на производстве</p>
                 </div>
                 
-                <!-- <div class="menu-card" onclick="showSection('ptb')">
+                <div class="menu-card" onclick="showSection('ptb')">
                     <span class="icon">🛡️</span>
                     <h2 data-i18n="menu_ptb">ПТБ (Правила техники безопасности)</h2>
                     <p data-i18n="desc_ptb">Общие правила техники безопасности на производстве</p>
@@ -488,7 +485,7 @@
                     <span class="icon">🏥</span>
                     <h2 data-i18n="menu_aid">Первая помощь</h2>
                     <p data-i18n="desc_aid">Оказание первой помощи при травмах, поражении током, пожаре</p>
-                </div> -->
+                </div>
             </div>
         </div>
 
@@ -579,7 +576,7 @@
 
 
         const translations = {
-           ru: {
+            ru: {
                 title: "🎓 Подготовка к экзаменам",
                 subtitle: "ПТЭ, ПТБ и правила работы на высоте",
                 menu_height: "Работа на высоте",
@@ -609,11 +606,7 @@
                 current_ticket: "Билет № {num} ({current}/{total})",
                 answer_label: "Ответ:"
             },
-            
-                
-               
-            
-          uz_lat: {
+            uz_lat: {
                 title: "🎓 Imtihonga tayyorgarlik",
                 subtitle: "PTÉ, PTB va balandlikda ishlash qoidalari",
                 menu_height: "Balandlikda ishlash",
@@ -643,7 +636,7 @@
                 current_ticket: "Bilet № {num} ({current}/{total})",
                 answer_label: "Javob:"
             },
-             uz_cyr: {
+            uz_cyr: {
                 title: "🎓 Имтиҳонга тайёргарлик",
                 subtitle: "ПТЭ, ПТБ ва баландликда ишлаш қоидалари",
                 menu_height: "Баландликда ишлаш",
@@ -1765,402 +1758,6 @@
                 }
             }
         };
-
-
-        const ticketsDataPTE = {
-    1: {
-        ru: {
-            title: "Билет № 1 (ПТЭ)",
-            questions: [
-                {
-                    q: "Безопасность работы персонала до и выше 1000 В, перечислить все условия безопасности.",
-                    a: "• Наличие допуска и удостоверения\n• Прохождение медицинского осмотра\n• Обучение и проверка знаний\n• Наличие наряда-допуска\n• Использование средств индивидуальной защиты\n• Соблюдение техники безопасности\n• Заземление электроустановок\n• Проверка отсутствия напряжения\n• Применение защитного отключения"
-                },
-                {
-                    q: "Кто даёт распоряжения на работы в электроустановках до и выше 1000В. В каком документе фиксируются производимые работы?",
-                    a: "Распоряжения даёт:\n• Главный энергетик предприятия\n• Ответственный за электрохозяйство\n• Дежурный персонал (оперативные переключения)\n\nДокументы:\n• Наряд-допуск — для плановых работ\n• Распоряжение — для оперативных работ\n• Запись в оперативном журнале"
-                },
-                {
-                    q: "Какой плакат запрещает включение электроустановки в работу? Когда он используется?",
-                    a: "Плакат «НЕ ВКЛЮЧАТЬ! РАБОТАЮТ ЛЮДИ»\n\nИспользуется:\n• При работе со снятием напряжения\n• На ручных и дистанционных приводах коммутационных аппаратов\n• На кнопках управления\n• При наличии нескольких бригад на разных участках"
-                },
-                {
-                    q: "Допускающий, его права и обязанности.",
-                    a: "Права:\n• Допускать бригаду к работе\n• Принимать рабочее место\n• Отстранять от работы при нарушениях\n\nОбязанности:\n• Выполнить технические мероприятия\n• Проверить отсутствие напряжения\n• Наложить заземления\n• Вывесить плакаты и ограждения\n• Инструктировать бригаду\n• Иметь группу III (до 1000В) или IV (выше 1000В)"
-                },
-                {
-                    q: "Каким условиям норм и правил ПТЭ и ПТБ должно соответствовать переносное заземление?",
-                    a: "• Провода из гибких медных жил, сечение не менее 25 мм²\n• Зажимы надёжной конструкции\n• Прочное соединение элементов (опрессовка, сварка, пайка)\n• Испытание 1 раз в 3 года\n• Наличие бирки с датой испытания\n• Соответствие требованиям термической устойчивости"
-                },
-                {
-                    q: "Какая первая помощь оказывается пострадавшему от электротока?",
-                    a: "1. Освободить от действия тока (отключить, оттащить)\n2. Проверить сознание, дыхание, пульс\n3. При остановке дыхания — искусственное дыхание\n4. При остановке сердца — непрямой массаж сердца\n5. При ожогах — стерильная повязка\n6. Вызвать скорую помощь\n7. Обеспечить покой и тепло"
-                },
-                {
-                    q: "Как произвести подключение электросварочного аппарата к источнику питания?",
-                    a: "• Через отдельный автомат или рубильник\n• Использовать кабель с изоляцией не ниже 1000 В\n• Подключать к клеммам с надёжным контактом\n• Заземлить корпус аппарата\n• Установить разделительный трансформатор при работе в опасных условиях\n• Проверить исправность кабелей и зажимов"
-                }
-            ]
-        },
-        uz_lat: {
-            title: "Bilet № 1 (PTÉ)",
-            questions: [
-                {
-                    q: "1000 V gacha va undan yuqori kuchlanishda xodimlarning ishlash xavfsizligi, barcha xavfsizlik shartlarini sanang.",
-                    a: "• Ruxsat va guvohnoma mavjudligi\n• Tibbiy ko'rikdan o'tish\n• O'qitish va bilimlarni tekshirish\n• Ruxsatnoma mavjudligi\n• Shaxsiy himoya vositalaridan foydalanish\n• Texnika xavfsizligini saqlash\n• Elektr qurilmalarini yerga ulash\n• Kuchlanish yo'qligini tekshirish\n• Himoya o'chirishni qo'llash"
-                },
-                {
-                    q: "1000 V gacha va undan yuqori elektr qurilmalarida ishlarga kimlar ruxsat beradi. Ishlar qaysi hujjatda qayd etiladi?",
-                    a: "Ruxsat beradi:\n• Korxonaning bosh energetigi\n• Elektr xo'jaligi uchun javobgar shaxs\n• Navbatchi xodimlar (operativ almashtirishlar)\n\nHujjatlar:\n• Ruxsatnoma — rejalashtirilgan ishlar uchun\n• Buyruq — operativ ishlar uchun\n• Operativ jurnalda yozuv"
-                },
-                {
-                    q: "Elektr qurilmasini ishga tushirishni qaysi plakat taqiqlaydi? U qachon ishlatiladi?",
-                    a: "«YOQMA! ISHCHILAR ISHLAMOQDA» plakati\n\nIshlatiladi:\n• Kuchlanish olib tashlangan ishlarda\n• Kommutatsiya uskunalari qo'l va masofadan boshqarish dastaklarida\n• Boshqaruv tugmalarida\n• Turli joylarda bir nechta brigadalar bo'lganda"
-                },
-                {
-                    q: "Ruxsat beruvchi, uning huquqlari va majburiyatlari.",
-                    a: "Huquqlari:\n• Brigadani ishga ruxsat berish\n• Ish joyini qabul qilish\n• Buzilishlar bo'lganda ishdan chetlatish\n\nMajburiyatlari:\n• Texnik chora-tadbirlarni bajarish\n• Kuchlanish yo'qligini tekshirish\n• Yerga ulashlarni qo'yish\n• Plakatlar va to'siqlarni o'rnatish\n• Brigadani instruktajdan o'tkazish\n• III guruhga (1000 V gacha) yoki IV guruhga (1000 V dan yuqori) ega bo'lish"
-                },
-                {
-                    q: "Ko'chma yerga ulash PTÉ va PTB qoidalarining qanday me'yorlari va qoidalariga muvofiqligi kerak?",
-                    a: "• Simlar moslashuvchan mis tolalaridan, kesimi kamida 25 mm²\n• Qisqichlar ishonchli konstruksiyadan\n• Elementlarning mustahkam ulanishi (presslash, payvandlash, leymalash)\n• 3 yilda 1 marta sinash\n• Sinash sanasi bilan yorliq mavjudligi\n• Issiqlik chidamliligi talablariga muvofiqlik"
-                },
-                {
-                    q: "Elektr toki urigan jabrlanuvchiga qanday birinchi yordam ko'rsatiladi?",
-                    a: "1. Tok ta'siridan ozod qilish (o'chirish, tortish)\n2. Ong, nafas olish, pulsni tekshirish\n3. Nafas olish to'xtaganda — sun'iy nafas olish\n4. Yurak to'xtaganda — bilvosita yurak massaji\n5. Kuyishlar bo'lsa — steril bog'ich\n6. Tez yordam chaqirish\n7. Tinchlik va issiqlik ta'minlash"
-                },
-                {
-                    q: "Elektr payvandlash apparatini quvvat manbasiga qanday ulash kerak?",
-                    a: "• Alohida avtomat yoki rubilnik orqali\n• 1000 V dan kam bo'lmagan izolyatsiyali kabeldan foydalanish\n• Ishonchli kontaktli klemmlarga ulash\n• Apparat korpusini yerga ulash\n• Xavfli sharoitlarda ishlayotganda ajratuvchi transformator o'rnatish\n• Kabellar va qisqichlarning ishonchliligini tekshirish"
-                }
-            ]
-        },
-        uz_cyr: {
-            title: "Билет № 1 (ПТЭ)",
-            questions: [
-                {
-                    q: "1000 В гача ва ундан юқори кучланишда ходимларнинг ишлаш хавфсизлиги, барча хавфсизлик шартларини сананг.",
-                    a: "• Рухсат ва гувоҳнома мавудлиги\n• Тиббий кўрикдан ўтиш\n• Ўқитиш ва билишни текшириш\n• Рухсатнома мавудлиги\n• Шахсий ҳимоя воситаларидан фойдаланиш\n• Техника хавфсизлигини сақлаш\n• Электр қурилмаларини ерга улаш\n• Кучланиш йўқлигини текшириш\n• Ҳимоя ўчиришни қўллаш"
-                },
-                {
-                    q: "1000 В гача ва ундан юқори электр қурилмаларида ишларга кимлар рухсат беради. Ишлар қайси ҳужжатда қайд этилади?",
-                    a: "Рухсат беради:\n• Корхонанинг бош энергетиги\n• Электр хўжалиги учун жавобгар шахс\n• Навбатчи ходимлар (оператив алмаштиришлар)\n\nҲужжатлар:\n• Рухсатнома — режалаштирилган ишлар учун\n• Буюруқ — оператив ишлар учун\n• Оператив журналда ёзув"
-                },
-                {
-                    q: "Электр қурилмасини ишга туширишни қандай плакат тақиқлайди? У қачон ишлатилади?",
-                    a: "«ЁҚМА! ИШЧИЛАР ИШЛАМОҚДА» плакати\n\nИшлатилади:\n• Кучланиш олиб ташланган ишларда\n• Коммутация ускуналари қўл ва масофадан бошқариш дастакларида\n• Бошқарув тугмаларидa\n• Турли жойларда бир нечта бригадалар бўлганда"
-                },
-                {
-                    q: "Рухсат берувчи, унинг ҳуқуқлари ва мажбуриятлари.",
-                    a: "Ҳуқуқлари:\n• Бригадани ишга рухсат бериш\n• Иш жойини қабул қилиш\n• Бузилишлар бўлганда ишдан четлатиш\n\nМажбуриятлари:\n• Техник чора-тадбирларни бажариш\n• Кучланиш йўқлигини текшириш\n• Ерга улашларни қўйиш\n• Плакатлар ва тўсиқларни ўрнатиш\n• Бригадани инструктаждан ўтказиш\n• III гуруҳга (1000 В гача) ёки IV гуруҳга (1000 В дан юқори) эга бўлиш"
-                },
-                {
-                    q: "Кўчма ерга улаш ПТЭ ва ПТБ қоидалари қандай меъёрлари ва қоидаларига мувофиқ бўлиши керак?",
-                    a: "• Симлар мослашувчан мис толаларидан, кесими камида 25 мм²\n• Қисқичлар ишончли конструкциядан\n• Элементларнинг мустаҳкам уланиши (пресслаш, пайвандлаш, леймалаш)\n• 3 йилда 1 марта синаш\n• Синаш санаси билан ёрлиқ мавудлиги\n• Иссиқлик чидамлилиги талабларига мувофиқлик"
-                },
-                {
-                    q: "Электр токи уриган жабрланувчига қандай биринчи ёрдам кўрсатилади?",
-                    a: "1. Ток таъсириндан озод қилиш (ўчириш, тортиш)\n2. Онг, нафас олиш, пулсни текшириш\n3. Нафас олиш тўхтаганда — сунъий нафас олиш\n4. Юрак тўхтаганда — билвосита юрак массажи\n5. Куйишлар бўлса — стерил богич\n6. Тез ёрдам чақириш\n7. Тинчлик ва иссиқлик таъминлаш"
-                },
-                {
-                    q: "Электр пайвандлаш аппаратини қувват манбасига қандай улаш керак?",
-                    a: "• Алоҳида автомат ёки рубильник орқали\n• 1000 В дан кам бўлмаган изоляцияли кабелдан фойдаланиш\n• Ишончли контактли клеммаларга улаш\n• Аппарат корпусини ерга улаш\n• Хавфли шароитларда ишлаётганда ажратувчи трансформатор ўрнатиш\n• Кабеллар ва қисқичларнинг ишончлилигини текшириш"
-                }
-            ]
-        }
-    },
-    2: {
-        ru: {
-            title: "Билет № 2 (ПТЭ)",
-            questions: [
-                {
-                    q: "Применение ПТЭ и ПТБ персонала.",
-                    a: "ПТЭ и ПТБ применяются:\n• Всех электроустановках переменного тока напряжением до и выше 1000 В\n• Электроустановках постоянного тока\n• Установках собственных нужд электростанций и подстанций\n• Передвижных электроустановках\n• Электрических сетях\n• При эксплуатации, техническом обслуживании и ремонте\n• При строительстве, монтаже и наладке"
-                },
-                {
-                    q: "Обязанность электроперсонала перед производством работ.",
-                    a: "Перед работой персонал обязан:\n• Проверить исправность инструмента и средств защиты\n• Убедиться в наличии наряда-допуска\n• Проверить выполнение технических мероприятий\n• Получить инструктаж от допускающего\n• Проверить заземления и ограждения\n• Надеть средства индивидуальной защиты\n• Убедиться в отсутствии алкогольного опьянения у членов бригады"
-                },
-                {
-                    q: "Причина разделений правил производства работ в электроустановках до и выше 1000В.",
-                    a: "Разделение обусловлено:\n• Различной степенью опасности поражения электрическим током\n• Особенностями коммутационной аппаратуры\n• Различными способами проверки отсутствия напряжения\n• Различными требованиями к заземлению\n• Различной квалификацией персонала\n• Особенностями организации оперативного обслуживания\n• Различными методами защиты от поражения током"
-                },
-                {
-                    q: "Что входит в организационные мероприятия?",
-                    a: "Организационные мероприятия:\n• Оформление работы нарядом или распоряжением\n• Допуск к работе\n• Надзор во время работы\n• Оформление перерыва в работе\n• Оформление перевода на другое рабочее место\n• Оформление окончания работы"
-                },
-                {
-                    q: "В каких случаях применяются приборы: индикатор напряжения, переносные клещи по определению загрузки фаз по току?",
-                    a: "Индикатор напряжения:\n• Перед началом работ для проверки отсутствия напряжения\n• При переключениях в оперативных схемах\n• При проверке изоляции\n\nПереносные клещи:\n• При измерении тока нагрузки в действующих цепях\n• При проверке баланса фаз\n• При определении перегрузки\n• При профилактических испытаниях"
-                },
-                {
-                    q: "Назовите виды средств пожаротушений, используемых на территории торгового центра.",
-                    a: "Первичные средства:\n• Порошковые огнетушители (ОП-2, ОП-4, ОП-6)\n• Углекислотные огнетушители (ОУ-1, ОУ-2, ОУ-3)\n• Пожарные щиты с инвентарём\n• Песок в ящиках\n• Асбестовые ткани\n\nСтационарные:\n• Автоматическая пожарная сигнализация\n• Система автоматического пожаротушения\n• Пожарные краны с рукавами\n• Гидранты наружного водоснабжения"
-                },
-                {
-                    q: "Как и в каких случаях производится непрямой массаж сердца и искусственное дыхание?",
-                    a: "Показания:\n• Отсутствие пульса на сонной артерии\n• Отсутствие дыхания\n• Потеря сознания\n\nНепрямой массаж сердца:\n• Пострадавший на твёрдой поверхности\n• Основание ладони на нижнюю треть грудины\n• 30 нажатий с частотой 100-120 в минуту\n• Глубина нажатия 5-6 см\n\nИскусственное дыхание:\n• После каждых 30 нажатий — 2 вдоха\n• Соотношение 30:2\n• Продолжать до восстановления пульса или приезда врача"
-                }
-            ]
-        },
-        uz_lat: {
-            title: "Bilet № 2 (PTÉ)",
-            questions: [
-                {
-                    q: "PTÉ va PTB xodimlarining qo'llanilishi.",
-                    a: "PTÉ va PTB qo'llaniladi:\n• 1000 V gacha va undan yuqori o'zgaruvchan tokning barcha elektr qurilmalarida\n• Doimiy tok elektr qurilmalarida\n• Elektr stantsiyalari va pastki stantsiyalarining o'z ehtiyojlari uchun qurilmalarida\n• Ko'chma elektr qurilmalarida\n• Elektr tarmoqlarida\n• Ekspluatatsiya, texnik xizmat va ta'mirlashda\n• Qurilish, montaj va sozlashda"
-                },
-                {
-                    q: "Ish boshlashdan oldin elektr xodimlarining majburiyatlari.",
-                    a: "Ishdan oldin xodimlar majbur:\n• Asbob-uskunalar va himoya vositalarining ishonchliligini tekshirish\n• Ruxsatnoma mavjudligiga ishonch hosil qilish\n• Texnik chora-tadbirlarni bajarishni tekshirish\n• Ruxsat beruvchidan instruktaj olish\n• Yerga ulash va to'siqlarni tekshirish\n• Shaxsiy himoya vositalarini kiyish\n• Brigada a'zolari orasida spirtli ichimlik iste'mol qilmaganligiga ishonch hosil qilish"
-                },
-                {
-                    q: "1000 V gacha va undan yuqori elektr qurilmalarida ishlarni bajarish qoidalarini ajratish sababi.",
-                    a: "Ajratish quyidagilar bilan bog'liq:\n• Elektr toki urishining turli darajasi xavfi\n• Kommutatsiya uskunalari xususiyatlari\n• Kuchlanish yo'qligini tekshirishning turli usullari\n• Yerga ulashning turli talablari\n• Xodimlarning turli malakasi\n• Operativ xizmat ko'rsatishni tashkil etish xususiyatlari\n• Tok urishidan himoyalashning turli usullari"
-                },
-                {
-                    q: "Tashkiliy tadbirlarga nimalar kiradi?",
-                    a: "Tashkiliy tadbirlar:\n• Ishni ruxsatnoma yoki buyruq bilan rasmiylashtirish\n• Ishga ruxsat berish\n• Ish vaqtida nazorat\n• Ishda tanaffusni rasmiylashtirish\n• Boshqa ish joyiga o'tishni rasmiylashtirish\n• Ishni tugatishni rasmiylashtirish"
-                },
-                {
-                    q: "Qanday hollarda asboblar qo'llaniladi: kuchlanish indikatori, o'zgaruvchan tok bilan fazalarni yuklashini aniqlash uchun ko'chma qisqichlar?",
-                    a: "Kuchlanish indikatori:\n• Ish boshlashdan oldin kuchlanish yo'qligini tekshirish uchun\n• Operativ sxemalarda almashtirishlar vaqtida\n• Izolyatsiyani tekshirishda\n\nKo'chma qisqichlar:\n• Ishlayotgan zanjirlarda yuklanish oqimini o'lchashda\n• Fazalarni balansini tekshirishda\n• Ortiqcha yuklanishni aniqlashda\n• Profilaktika sinovlarida"
-                },
-                {
-                    q: "Savdo markazi hududida qo'llaniladigan yong'in o'chirish vositalarining turlarini ayting.",
-                    a: "Boshlang'ich vositalar:\n• Changli o't o'chirgichlar (OP-2, OP-4, OP-6)\n• Uglerod angidridli o't o'chirgichlar (OU-1, OU-2, OU-3)\n• Inventar bilan yong'in qalplari\n• Qum qutilar\n• Asbest matolar\n\nStasionar vositalar:\n• Avtomatik yong'in signalizatsiyasi\n• Avtomatik yong'in o'chirish tizimi\n• Shlangli yong'in kranlari\n• Tashqi suv ta'minoti gidrantlari"
-                },
-                {
-                    q: "Bilvosita yurak massaji va sun'iy nafas olish qanday va qanday hollarda amalga oshiriladi?",
-                    a: "Ko'rsatmalar:\n• Bo'yin arteriyasida puls yo'qligi\n• Nafas olish yo'qligi\n• Ong yo'qolishi\n\nBilvosita yurak massaji:\n• Jabrlanuvchi qattiq yuzada\n• Kaft asosini ko'krak suyagining pastki uchiniga qo'yish\n• Daqiqada 100-120 tezlikda 30 marta bosish\n• Bosish chuqurligi 5-6 sm\n\nSun'iy nafas olish:\n• Har 30 bosishdan keyin — 2 marta nafas\n• Nisbat 30:2\n• Puls tiklanishi yoki shifokor kelishigacha davom ettirish"
-                }
-            ]
-        },
-        uz_cyr: {
-            title: "Билет № 2 (ПТЭ)",
-            questions: [
-                {
-                    q: "ПТЭ ва ПТБ ходимларининг қўлланилиши.",
-                    a: "ПТЭ ва ПТБ қўлланилади:\n• 1000 В гача ва ундан юқори ўзгарувчан токнинг барча электр қурилмаларида\n• Доимий ток электр қурилмаларида\n• Электр станциялари ва пастки станцияларининг ўз эҳтиёжлари учун қурилмаларидa\n• Кўчма электр қурилмаларида\n• Электр тармоқларида\n• Эксплуатация, техник хизмат ва таъмирлашда\n• Қурилиш, монтаж ва созлашда"
-                },
-                {
-                    q: "Иш бошлашдан олдин электр ходимларининг мажбуриятлари.",
-                    a: "Ишдан олдин ходимлар мажбур:\n• Асбоб-ускуналар ва ҳимоя воситаларининг ишончлилигини текшириш\n• Рухсатнома мавудлигига ишонч ҳосил қилиш\n• Техник чора-тадбирларни бажаришни текшириш\n• Рухсат берувчидан инструктаж олиш\n• Ерга улаш ва тўсиқларни текшириш\n• Шахсий ҳимоя воситаларини кийиш\n• Бригада аъзолари орасида спиртли ичимлик истеъмол қилмаганлигига ишонч ҳосил қилиш"
-                },
-                {
-                    q: "1000 В гача ва ундан юқори электр қурилмаларида ишларни бажариш қоидаларини ажратиш сабаби.",
-                    a: "Ажратиш қуйидагилар билан боғлиқ:\n• Электр токи уришининг турли даражаси хавфи\n• Коммутация ускуналари хусусиятлари\n• Кучланиш йўқлигини текширишнинг турли усуллари\n• Ерга улашнинг турли талаблари\n• Ходимларнинг турли малакаси\n• Оператив хизмат кўрсатишни ташкил этиш хусусиятлари\n• Ток уришидан ҳимоялашнинг турли усуллари"
-                },
-                {
-                    q: "Ташкилий тадбирларга нималар киради?",
-                    a: "Ташкилий тадбирлар:\n• Ишни рухсатнома ёки буюруқ билан расмийлаштириш\n• Ишга рухсат бериш\n• Иш вақтида назорат\n• Ишда танаффусни расмийлаштириш\n• Бошқа иш жойига ўтишни расмийлаштириш\n• Ишни тугатишни расмийлаштириш"
-                },
-                {
-                    q: "Қандай ҳолларда асбоблар қўлланилади: кучланиш индикатори, ўзгарувчан ток билан фазаларни юклашини аниқлаш учун кўчма қисқичлар?",
-                    a: "Кучланиш индикатори:\n• Иш бошлашдан олдин кучланиш йўқлигини текшириш учун\n• Оператив схемаларда алмаштиришлар вақтида\n• Изоляцияни текширишда\n\nКўчма қисқичлар:\n• Ишлаётган занжирларда юкланиш оқимини ўлчашда\n• Фазаларни балансини текширишда\n• Ортиқча юкланишни аниқлашда\n• Профилактика синовларида"
-                },
-                {
-                    q: "Савдо маркази ҳудудида қўлланиладиган ёнғин ўчириш воситаларининг турларини айтинг.",
-                    a: "Бошланғич воситалар:\n• Чангли ўт ўчиригичлар (ОП-2, ОП-4, ОП-6)\n• Карбонат ангидридли ўт ўчиригичлар (ОУ-1, ОУ-2, ОУ-3)\n• Инвентар билан ёнғин қалплари\n• Қум қутилар\n• Асбест матолар\n\nСтасионар воситалар:\n• Автоматик ёнғин сигнализацияси\n• Автоматик ёнғин ўчириш тизими\n• Шлангли ёнғин кранлари\n• Ташқи сув таъминоти гидрантлари"
-                },
-                {
-                    q: "Билвосита юрак массажи ва сунъий нафас олиш қандай ва қандай ҳолларда амалга оширилади?",
-                    a: "Кўрсатмалар:\n• Бо'йин артериясида пульс йўқлиги\n• Нафас олиш йўқлиги\n• Онг йўқолиши\n\nБилвосита юрак массажи:\n• Жабрланувчи қаттиқ юзада\n• Кафт асосини кўкрак суягининг пастки учинига қўйиш\n• Дақиқада 100-120 тезликда 30 марта босиш\n• Босиш чуқурлиги 5-6 см\n\nСунъий нафас олиш:\n• Ҳар 30 босишдан кейин — 2 марта нафас\n• Нисбат 30:2\n• Пульс тикланиши ёки шифокор келишигача давом эттириш"
-                }
-            ]
-        }
-    },
-    3: {
-        ru: {
-            title: "Билет № 3 (ПТЭ)",
-            questions: [
-                {
-                    q: "Как различаются электроустановки в зависимости от условий электробезопасности?",
-                    a: "• Электроустановки до 1000 В включительно\n• Электроустановки выше 1000 В\n\nПо условиям:\n• С малым напряжением (до 50 В переменного, до 120 В постоянного) — не требуют заземления\n• С повышенной опасностью (сырые, с токопроводящими полами, металлические ёмкости)\n• С особо опасными условиями (внутри ёмкостей, колодцев, на открытом воздухе)\n• Взрывоопасные зоны"
-                },
-                {
-                    q: "Какие плакаты, согласно правилам ПТЭ и ПТБ, применяются при работах на действующих электроустановках и ЛЭП?",
-                    a: "Предупреждающие:\n• «Напряжение!»\n• «Стой! Опасно для жизни»\n• «Стой! Высокое напряжение»\n\nЗапрещающие:\n• «Не влезай — убьёт!»\n• «Не включать! Работают люди»\n\nПредписывающие:\n• «Работать здесь»\n• «Заземлено»\n\nУказательные:\n• «Вход (проход) воспрещён»"
-                },
-                {
-                    q: "Как проводится заземление, зануление электроустановки?",
-                    a: "Заземление:\n• Присоединение непроводящих частей к заземлителю\n• Защита от поражения током при пробое изоляции\n• Сечение проводников не менее 25 мм² (для переносных)\n\nЗануление:\n• Присоединение корпуса к нулевому проводу\n• Применяется в сетях до 1000 В с глухозаземлённой нейтралью\n• Обеспечивает автоматическое отключение при пробое"
-                },
-                {
-                    q: "Кто производит допуск бригады на работы в электроустановках?",
-                    a: "Допуск производит:\n• Допускающий — ответственное лицо из оперативного персонала\n• Имеет группу III (до 1000 В) или IV (выше 1000 В)\n• Проверяет выполнение технических мероприятий\n• Проверяет отсутствие напряжения\n• Налагает заземления\n• Инструктирует бригаду\n• Оформляет подписи в наряде"
-                },
-                {
-                    q: "Ответственность лица, выдающего наряд или распоряжение.",
-                    a: "Ответственность:\n• За правильность и достаточность мер безопасности\n• За соответствие квалификации персонала\n• За правильность оформления документов\n• За своевременность выдачи наряда\n• За контроль выполнения работ\n• Несёт ответственность при несчастных случаях"
-                },
-                {
-                    q: "Что необходимо сделать при растяжении связок?",
-                    a: "• Обеспечить покой повреждённой конечности\n• Приложить холод (лед, холодная вода) на 15-20 минут\n• Наложить эластичную повязку или бинт\n• Зафиксировать конечность в приподнятом положении\n• При сильной боли — обезболивающее\n• Обратиться к врачу"
-                }
-            ]
-        },
-        uz_lat: {
-            title: "Bilet № 3 (PTÉ)",
-            questions: [
-                {
-                    q: "Elektr qurilmalari elektr xavfsizligi sharoitlariga qarab qanday farqlanadi?",
-                    a: "• 1000 V gacha elektr qurilmalari\n• 1000 V dan yuqori elektr qurilmalari\n\nSharoitlar bo'yicha:\n• Kichik kuchlanishli (50 V o'zgaruvchan, 120 V doimiy) — yerga ulash talab etilmaydi\n• Oshirilgan xavfli (nam, tok o'tkazuvchi polli, metall idishlar)\n• Alohida xavfli (idish ichida, quduqlarda, ochiq havoda)\n• Portlash xavfli zonalari"
-                },
-                {
-                    q: "PTÉ va PTB qoidalariga ko'ra ishlayotgan elektr qurilmalari va EHTda qanday plakatlar qo'llaniladi?",
-                    a: "Ogohlantiruvchi:\n• «Kuchlanish!»\n• «To'xta! Hayot uchun xavfli»\n• «To'xta! Yuqori kuchlanish»\n\nTaqiqlovchi:\n• «Kirmang — o'ldiradi!»\n• «Yo'qma! Ishchilar ishlashmoqda»\n\nBuyuruvchi:\n• «Bu yerda ishlash»\n• «Yerga ulangan»\n\nKo'rsatuvchi:\n• «Kirish (o'tish) taqiqlanadi»"
-                },
-                {
-                    q: "Elektr qurilmasini yerga ulash va nollash qanday amalga oshiriladi?",
-                    a: "Yerga ulash:\n• O'tkazmaydigan qismlarni yerga ulagichga ulash\n• Izolyatsiya buzilganda tok urishidan himoya\n• Ko'chma uchun simlar kesimi kamida 25 mm²\n\nNollash:\n• Korpusni nol simiga ulash\n• 1000 V gacha tarmoqlarda, g'ovak yerlangan nol bilan qo'llaniladi\n• Buzilganda avtomatik o'chirishni ta'minlaydi"
-                },
-                {
-                    q: "Elektr qurilmalarida ishlarga brigadani kim ruxsat beradi?",
-                    a: "Ruxsat beradi:\n• Ruxsat beruvchi — operativ xodimlardan javobgar shaxs\n• III guruhga (1000 V gacha) yoki IV guruhga (1000 V dan yuqori) ega\n• Texnik chora-tadbirlarni bajarishni tekshiradi\n• Kuchlanish yo'qligini tekshiradi\n• Yerga ulashlarni qo'yadi\n• Brigadani instruktajdan o'tkazadi\n• Ruxsatnomada imzolar qo'yadi"
-                },
-                {
-                    q: "Ruxsatnoma yoki buyruq beruvchi shaxsning javobgarligi.",
-                    a: "Javobgarlik:\n• Xavfsizlik choralari to'g'riligi va yetarliigi uchun\n• Xodimlarning malakasiga mosligi uchun\n• Hujjatlarni to'g'ri rasmiylashtirish uchun\n• Ruxsatnomani o'z vaqtida berish uchun\n• Ishlarni nazorat qilish uchun\n• Baxtsiz hodisalarda javobgarlikni o'z zimmasiga oladi"
-                },
-                {
-                    q: "Bog'imlarni cho'zishda nima qilish kerak?",
-                    a: "• Zararlangan a'zoni tinch holatga keltirish\n• Muz (sovuq suv) ni 15-20 daqiqa qo'yish\n• Elastik bog'ich yoki bint qo'yish\n• A'zoni ko'tarilgan holatda mahkamlash\n• Kuchli og'riqda — og'riq qoldiruvchi\n• Shifokorga murojaat qilish"
-                }
-            ]
-        },
-        uz_cyr: {
-            title: "Билет № 3 (ПТЭ)",
-            questions: [
-                {
-                    q: "Электр қурилмалари электр хавфсизлиги шароитларига қараб қандай фарқланади?",
-                    a: "• 1000 В гача электр қурилмалари\n• 1000 В дан юқори электр қурилмалари\n\nШароитлар бўйича:\n• Кичик кучланишли (50 В ўзгарувчан, 120 В доимий) — ерга улаш талаб этилмайди\n• Оширилган хавфли (нам, ток ўтказувчи полли, металл идишлар)\n• Алоҳида хавфли (идиш ичида, қудуқларда, очиқ ҳавода)\n• Портлаш хавфли зоналар"
-                },
-                {
-                    q: "ПТЭ ва ПТБ қоидаларига кўра ишлаётган электр қурилмалари ва ЕҲТда қандай плакатлар қўлланилади?",
-                    a: "Огоҳлантирувчи:\n• «Кучланиш!»\n• «Тўхта! Ҳаёт учун хавфли»\n• «Тўхта! Юқори кучланиш»\n\nТақиқловчи:\n• «Кирманг — ўлдиради!»\n• «Ёқма! Ишчилар ишламоқда»\n\nБуюруқчи:\n• «Бу ерда ишлаш»\n• «Ерга уланган»\n\nКўрсатувчи:\n• «Кириш (ўтиш) тақиқланади»"
-                },
-                {
-                    q: "Электр қурилмасини ерга улаш ва ноллаш қандай амалга оширилади?",
-                    a: "Ерга улаш:\n• Ўтказмайдиган қисмларни ерга улагичга улаш\n• Изоляция бузилганда ток уришидан ҳимоя\n• Кўчма учун симлар кесими камида 25 мм²\n\nНоллаш:\n• Корпусни нол симига улаш\n• 1000 В гача тармоқларда, ғовак ерланган нол билан қўлланилади\n• Бузилганда автоматик ўчиришни таъминлайди"
-                },
-                {
-                    q: "Электр қурилмаларида ишларга бригадани ким рухсат беради?",
-                    a: "Рухсат беради:\n• Рухсат берувчи — оператив ходимлардан жавобгар шахс\n• III гуруҳга (1000 В гача) ёки IV гуруҳга (1000 В дан юқори) эга\n• Техник чора-тадбирларни бажаришни текширади\n• Кучланиш йўқлигини текширади\n• Ерга улашларни қўяди\n• Бригадани инструктаждан ўтказади\n• Рухсатномада имзолар қўяди"
-                },
-                {
-                    q: "Рухсатнома ёки буюруқ берувчи шахснинг жавобгарлиги.",
-                    a: "Жавобгарлик:\n• Хавфсизлик чоралари тўғрилиги ва етарлилиги учун\n• Ходимларнинг малакасига мослиги учун\n• Ҳужжатларни тўғри расмийлаштириш учун\n• Рухсатномани ўз вақтида бериш учун\n• Ишларни назорат қилиш учун\n• Бахтсиз ҳодисаларда жавобгарликни ўз зиммасига олади"
-                },
-                {
-                    q: "Боғимларни чўзишда нима қилиш керак?",
-                    a: "• Зарарланган аъзони тинч ҳолатга келтириш\n• Муз (совуқ сув) ни 15-20 дақиқа қўйиш\n• Эластик богич ёки бинт қўйиш\n• Аъзони кўтарилган ҳолатда махкамлаш\n• Кучли оғриқда — оғриқ қолдирувчи\n• Шифокорга мурожаат қилиш"
-                }
-            ]
-        }
-    },
-    4: {
-        ru: {
-            title: "Билет № 4 (ПТЭ)",
-            questions: [
-                {
-                    q: "В каких случаях проводится внеочередная проверка знаний правил ПТЭ, ПТБ?",
-                    a: "Внеочередная проверка проводится:\n• При нарушении правил техники безопасности\n• По требованию вышестоящей организации\n• По требованию органов государственного надзора\n• При переводе на другую работу\n• При введении новой редакции правил\n• После перерыва в работе более 6 месяцев\n• При аварии или несчастном случае по вине работника"
-                },
-                {
-                    q: "Роль масляного выключателя.",
-                    a: "Масляный выключатель:\n• Включает и отключает электрические цепи\n• Гасит электрическую дугу в масле\n• Защищает от коротких замыканий и перегрузок\n• Используется в сетях 6-10 кВ и выше\n• Обеспечивает надёжное отключение при авариях\n• Требует контроля уровня и качества масла"
-                },
-                {
-                    q: "Перечислите, что входит в технические мероприятия? Кто их организует проводит?",
-                    a: "Технические мероприятия:\n• Отключение напряжения\n• Вывешивание запрещающих плакатов\n• Проверка отсутствия напряжения\n• Наложение заземлений\n• Ограждение рабочих мест\n\nОрганизует и проводит:\n• Допускающий из оперативного персонала\n• Имеет соответствующую группу по электробезопасности"
-                },
-                {
-                    q: "Что относится к индивидуальным средствам защиты?",
-                    a: "Основные средства:\n• Диэлектрические перчатки\n• Диэлектрические боты и галоши\n• Изолирующие штанги\n• Указатели напряжения\n• Электроизмерительные клещи\n\nДополнительные средства:\n• Диэлектрические коврики\n• Защитные каски\n• Очки защитные\n• Страховочные пояса (при работе на высоте)"
-                },
-                {
-                    q: "Каковы основные причины электротравматизма?",
-                    a: "Основные причины:\n• Нарушение правил техники безопасности\n• Работа без наряда-допуска\n• Отсутствие или неисправность средств защиты\n• Недостаточная квалификация персонала\n• Неудовлетворительная организация работ\n• Плохое состояние электрооборудования\n• Отсутствие надлежащего контроля\n• Спешка, невнимательность, самоуспокоенность"
-                },
-                {
-                    q: "Назовите возможные причины возникновения пожара в электроустановках?",
-                    a: "Причины пожаров:\n• Короткое замыкание из-за повреждения изоляции\n• Перегрузка проводов и кабелей\n• Плохой контакт в соединениях (перегрев)\n• Пробой изоляции на корпус\n• Искрение в коммутационных аппаратах\n• Неисправность защитных устройств\n• Нарушение правил эксплуатации оборудования\n• Попадание посторонних предметов на токоведущие части"
-                },
-                {
-                    q: "Какую помощь пострадавшему надо оказать при отсутствии пульса?",
-                    a: "При отсутствии пульса:\n• Немедленно начать СЛР (сердечно-лёгочную реанимацию)\n• Непрямой массаж сердца: 30 нажатий на грудину\n• Глубина нажатия 5-6 см, частота 100-120 в минуту\n• Искусственное дыхание: 2 вдоха после каждых 30 нажатий\n• Соотношение 30:2\n• Не прекращать до приезда скорой помощи или восстановления пульса\n• Вызвать скорую помощь (или поручить другому)"
-                }
-            ]
-        },
-        uz_lat: {
-            title: "Bilet № 4 (PTÉ)",
-            questions: [
-                {
-                    q: "Qanday hollarda PTÉ, PTB qoidalarini navbatdan tashqari tekshirish o'tkaziladi?",
-                    a: "Navbatdan tashqari tekshirish o'tkaziladi:\n• Texnika xavfsizligi qoidalarini buzishda\n• Yuqori turgan tashkilot talabi bo'yicha\n• Davlat nazorati organlari talabi bo'yicha\n• Boshqa ishga o'tkazilganda\n• Qoidalar yangi tahriri kiritilganda\n• Ishda 6 oydan ortiq tanaffusdan keyin\n• Ishchining aybi bilan avariya yoki baxtsiz hodisada"
-                },
-                {
-                    q: "Moyli ajratgichning roli.",
-                    a: "Moyli ajratgich:\n• Elektr zanjirlarini yoqadi va o'chiradi\n• Elektr yoyini moyda o'chiradi\n• Qisqa tutashuv va ortiqcha yuklanishdan himoya qiladi\n• 6-10 kV va undan yuqori tarmoqlarda qo'llaniladi\n• Avariyalarda ishonchli o'chirishni ta'minlaydi\n• Moy darajasi va sifatini nazorat qilishni talab qiladi"
-                },
-                {
-                    q: "Texnik chora-tadbirlarga nimalar kiradi? Ularni kim tashkil etadi va o'tkazadi?",
-                    a: "Texnik chora-tadbirlar:\n• Kuchlanishni o'chirish\n• Taqiqlovchi plakatlarni o'rnatish\n• Kuchlanish yo'qligini tekshirish\n• Yerga ulashlarni qo'yish\n• Ish joylarini to'sish\n\nTashkil etadi va o'tkazadi:\n• Operativ xodimlardan ruxsat beruvchi\n• Elektr xavfsizligi bo'yicha mos guruhga ega"
-                },
-                {
-                    q: "Shaxsiy himoya vositalariga nimalar kiradi?",
-                    a: "Asosiy vositalar:\n• Dialektrik qo'lqoplar\n• Dialektrik etiklar va kaloshlar\n• Izolyatsiyalangan shtangalar\n• Kuchlanish ko'rsatkichlari\n• Elektr o'lchov qisqichlari\n\nQo'shimcha vositalar:\n• Dialektrik gilamchalar\n• Himoya kasqalari\n• Himoya ko'zoynaklari\n• Sug'urta kamarlari (balandlikda ishlashda)"
-                },
-                {
-                    q: "Elektr travmatizmining asosiy sabablari qanday?",
-                    a: "Asosiy sabablar:\n• Texnika xavfsizligi qoidalarini buzish\n• Ruxsatnomasiz ishlash\n• Himoya vositalarining yo'qligi yoki nosozligi\n• Xodimlarning yetarli malakaga ega emasligi\n• Ishlarni tashkil etishning qoniqarsizligi\n• Elektr uskunasining yomon holati\n• Zarur nazoratning yo'qligi\n• Shoshilish, e'tiborsizlik, o'zini xotirjam tutish"
-                },
-                {
-                    q: "Elektr qurilmalarida yong'in kelib chiqishining mumkin bo'lgan sabablarini ayting.",
-                    a: "Yong'in sabablari:\n• Izolyatsiya shikastlanishi natijasida qisqa tutashuv\n• Sim va kabel ortiqcha yuklanishi\n• Ulanishlarda yomon kontakt (ortiqcha qizish)\n• Izolyatsiya korpusga buzilishi\n• Kommutatsiya uskunalari uchqunlashi\n• Himoya uskunasining nosozligi\n• Uskunadan foydalanish qoidalarini buzish\n• Begona buyumlar tok o'tkazuvchi qismlarga tushishi"
-                },
-                {
-                    q: "Puls yo'qligida jabrlanuvchiga qanday yordam ko'rsatish kerak?",
-                    a: "Puls yo'qligida:\n• Darhol YOR (yurak-o'pka reanimatsiyasini) boshlash\n• Bilvosita yurak massaji: ko'krakka 30 marta bosish\n• Bosish chuqurligi 5-6 sm, tezligi 100-120 daqiqada\n• Sun'iy nafas olish: har 30 bosishdan keyin 2 marta nafas\n• Nisbat 30:2\n• Tez yordam kelishi yoki puls tiklanmaguncha to'xtatmaslik\n• Tez yordam chaqirish (yoki boshqa topshirish)"
-                }
-            ]
-        },
-        uz_cyr: {
-            title: "Билет № 4 (ПТЭ)",
-            questions: [
-                {
-                    q: "Қандай ҳолларда ПТЭ, ПТБ қоидаларини навбатдан ташқари текшириш ўтказилади?",
-                    a: "Навбатдан ташқари текшириш ўтказилади:\n• Техника хавфсизлиги қоидаларини бузишда\n• Юқори турган ташкилот талаби бўйича\n• Давлат назорати органлари талаби бўйича\n• Бошқа ишга ўтказилганда\n• Қоидалар янги таҳрири киритилганда\n• Ишда 6 ойдан ортиқ танаффусдан кейин\n• Ишчининг айби билан авария ёки бахтсиз ҳодисада"
-                },
-                {
-                    q: "Мойли ажратгичнинг роли.",
-                    a: "Мойли ажратгич:\n• Электр занжирларини ёқади ва ўчиради\n• Электр ёйини мойда ўчиради\n• Қисқа туташув ва ортиқча юкланишдан ҳимоя қилади\n• 6-10 кВ ва ундан юқори тармоқларда қўлланилади\n• Аварияларда ишончли ўчиришни таъминлайди\n• Мой даражаси ва сифатини назорат қилишни талаб қилади"
-                },
-                {
-                    q: "Техник чора-тадбирларга нималар киради? Уларни ким ташкил этади ва ўтказади?",
-                    a: "Техник чора-тадбирлар:\n• Кучланишни ўчириш\n• Тақиқловчи плакатларни ўрнатиш\n• Кучланиш йўқлигини текшириш\n• Ерга улашларни қўйиш\n• Иш жойларини тўсиш\n\nТашкил этади ва ўтказади:\n• Оператив ходимлардан рухсат берувчи\n• Электр хавфсизлиги бўйича мос гуруҳга эга"
-                },
-                {
-                    q: "Шахсий ҳимоя воситаларига нималар киради?",
-                    a: "Асосий воситалар:\n• Диалектрик қўлқоплар\n• Диалектрик этиклар ва калошлар\n• Изоляцияланган штангалар\n• Кучланиш кўрсаткичлари\n• Электр ўлчов қисқичлари\n\nҚўшимча воситалар:\n• Диалектрик гиламчалар\n• Ҳимоя каскалари\n• Ҳимоя кўзойнаклари\n• Суғурта камарлари (баландликда ишлашда)"
-                },
-                {
-                    q: "Электр травматизмнинг асосий сабаблари қандай?",
-                    a: "Асосий сабаблар:\n• Техника хавфсизлиги қоидаларини бузиш\n• Рухсатномасиз ишлаш\n• Ҳимоя воситаларининг йўқлиги ёки носозлиги\n• Ходимларнинг етарли малакага эга эмаслиги\n• Ишларни ташкил этишнинг қониқарсизлиги\n• Электр ускунасининг ёмон ҳолати\n• Зарур назоратнинг йўқлиги\n• Шошилиш, эътиборсизлик, ўзини хотиржам тутиш"
-                },
-                {
-                    q: "Электр қурилмаларда ёнғин келиб чиқишининг мумкин бўлган сабабларини айтинг.",
-                    a: "Ёнғин сабаблари:\n• Изоляция шикастланиши натижасида қисқа туташув\n• Сим ва кабел ортиқча юкланиши\n• Уланишларда ёмон контакт (ортиқча қизиш)\n• Изоляция корпусга бузилиши\n• Коммутация ускуналари учқунлаши\n• Ҳимоя ускунасининг носозлиги\n• Ускунадан фойдаланиш қоидаларини бузиш\n• Бегона буюмлар ток ўтказувчи қисмларга тушиши"
-                },
-                {
-                    q: "Пулс йўқлигида жабрланувчига қандай ёрдам кўрсатиш керак?",
-                    a: "Пулс йўқлигида:\n• Дарҳол ЁР (юрак-ўпка реанимациясини) бошлаш\n• Билвосита юрак массажи: кўкракка 30 марта босиш\n• Босиш чуқурлиги 5-6 см, тезлиги 100-120 дақиқада\n• Сунъий нафас олиш: ҳар 30 босишдан кейин 2 марта нафас\n• Нисбат 30:2\n• Тез ёрдам келиши ёки пулс тикланмагунча тўхтатмаcлик\n• Тез ёрдам чақириш (ёки бошқа топшириш)"
-                }
-            ]
-        }
-    }
-};
 
         // Все номера билетов в порядке
         const allTicketNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
