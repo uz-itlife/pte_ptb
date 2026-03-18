@@ -488,8 +488,8 @@
             <input type="text" class="search-box" data-i18n-placeholder="search" placeholder="🔍 Поиск по вопросам..." oninput="searchQuestions(this.value, 'heightWork')">
             
             <div class="mode-selector">
-                <button class="mode-btn active" onclick="setMode('study')" data-i18n="mode_study">📚 Режим обучения</button>
-                <button class="mode-btn" onclick="setMode('exam')" data-i18n="mode_exam">📝 Режим экзамена</button>
+                <button class="mode-btn active" onclick="setModeHeight('study')" data-i18n="mode_study">📚 Режим обучения</button>
+                <button class="mode-btn" onclick="setModeHeight('exam')" data-i18n="mode_exam">📝 Режим экзамена</button>
                 <a target="_blank" href="./1890.pdf">Приказ министра труда</a>
             </div>
             
@@ -502,18 +502,18 @@
             
             <div id="ticketContentHeight" class="ticket-content" style="display: none;">
                 <div class="ticket-navigation">
-                    <button class="nav-btn" id="prevBtnHeight" onclick="prevTicketHeight()" data-i18n="prev">← Предыдущий</button>
-                    <div class="current-ticket-info" id="currentTicketInfoHeight">Билет № 1</div>
-                    <button class="nav-btn" id="nextBtnHeight" onclick="nextTicketHeight()" data-i18n="next">Следующий →</button>
-                </div>
+    <button class="nav-btn" id="prevBtnHeight" onclick="prevTicketHeight()" data-i18n="prev">← Предыдущий</button>
+    <div class="current-ticket-info" id="currentTicketInfoHeight">Билет № 1</div>
+    <button class="nav-btn" id="nextBtnHeight" onclick="nextTicketHeight()" data-i18n="next">Следующий →</button>
+</div>
                 
                 <div id="ticketQuestionsHeight"></div>
                 
                 <div class="ticket-navigation" style="margin-top: 30px;">
-                    <button class="nav-btn" onclick="prevTicketHeight()" data-i18n="prev">← Предыдущий</button>
-                    <button class="nav-btn" onclick="backToTicketsHeight()" style="background: #e74c3c;" data-i18n="all_tickets">📋 Все билеты</button>
-                    <button class="nav-btn" onclick="nextTicketHeight()" data-i18n="next">Следующий →</button>
-                </div>
+    <button class="nav-btn" onclick="prevTicketHeight()" data-i18n="prev">← Предыдущий</button>
+    <button class="nav-btn" onclick="backToTicketsHeight()" style="background: #e74c3c;" data-i18n="all_tickets">📋 Все билеты</button>
+    <button class="nav-btn" onclick="nextTicketHeight()" data-i18n="next">Следующий →</button>
+</div>
             </div>
             
             <div class="ticket-links" id="ticketLinksHeight" style="display: none;">
@@ -3084,34 +3084,49 @@
             renderTicketsListHeight();
         }
 
-        function renderTicketLinksHeight() {
-            const container = document.getElementById('ticketLinksGridHeight');
-            container.innerHTML = '';
-            
-            allTicketNumbersHeight.forEach((num, idx) => {
-                const link = document.createElement('a');
-                link.className = 'ticket-link';
-                link.href = '#';
-                link.textContent = num;
-                link.onclick = (e) => {
-                    e.preventDefault();
-                    currentTicketIndexHeight = idx;
-                    showTicketHeight(num);
-                };
-                container.appendChild(link);
-            });
-        }
+        // Заполняем круглые ссылки на билеты для раздела Работа на высоте
+function renderTicketLinksHeight() {
+    const grid = document.getElementById('ticketLinksGridHeight');
+    if (!grid) return; // защита от ошибок
 
-        function updateTicketLinksHeight(activeNum) {
-            document.querySelectorAll('#ticketLinksGridHeight .ticket-link').forEach((link, idx) => {
-                link.classList.remove('active', 'viewed');
-                if (allTicketNumbersHeight[idx] === activeNum) {
-                    link.classList.add('active');
-                } else if (viewedTicketsHeight.has(allTicketNumbersHeight[idx])) {
-                    link.classList.add('viewed');
-                }
-            });
+    grid.innerHTML = ''; // очищаем перед заполнением
+
+    for (let i = 1; i <= 12; i++) {
+        const link = document.createElement('a');
+        link.className = 'ticket-link';
+        link.href = '#';
+        link.textContent = i;
+        
+        // Если билет уже просмотрен — добавляем класс viewed
+        if (viewedTicketsHeight.has(i)) {
+            link.classList.add('viewed');
         }
+        
+        // Клик — открываем нужный билет
+        link.onclick = function(e) {
+            e.preventDefault();
+            showTicketHeight(i);
+        };
+        
+        grid.appendChild(link);
+    }
+}
+
+// Обновляем активный билет и просмотренные (вызывается при смене билета)
+function updateTicketLinksHeight() {
+    const links = document.querySelectorAll('#ticketLinksGridHeight .ticket-link');
+    links.forEach((link, index) => {
+        const num = index + 1;
+        link.classList.remove('active', 'viewed');
+        
+        if (num === currentHeightTicket) {
+            link.classList.add('active');
+        }
+        if (viewedTicketsHeight.has(num)) {
+            link.classList.add('viewed');
+        }
+    });
+}
 
         function toggleAnswerHeight(element) {
             if (currentModeHeight === 'exam') {
@@ -3429,73 +3444,80 @@
 }
 
 function showTicketHeight(ticketNum) {
+    currentHeightTicket = ticketNum;
+
     const ticket = ticketsDataHeight[ticketNum];
     if (!ticket) {
         console.error("Билет", ticketNum, "не найден");
         return;
     }
 
+
+
     const langData = ticket[currentLang] || ticket.ru;
-    const container = document.getElementById('ticketQuestionsHeight');
-    container.innerHTML = '';
+    
+    // Заголовок
+    document.getElementById('currentTicketInfoHeight').textContent = 
+        `Билет № ${ticketNum}`;
 
+
+        document.getElementById('ticketContentHeight').style.display = 'block';
+    document.getElementById('ticketsListHeight').style.display = 'none';
+    
+    // ←←← Показываем и обновляем круглые кнопки
+    document.getElementById('ticketLinksHeight').style.display = 'block';
+    updateTicketLinksHeight();
+
+    // Вопросы
+    let html = '';
     langData.questions.forEach((item, idx) => {
-        const block = document.createElement('div');
-        block.className = 'question-block';
-        if (currentModeHeight === 'exam') block.classList.add('exam-mode');
-
-        block.innerHTML = `
-            <div class="question-text">
-                <span class="question-number">${idx + 1}</span>
-                ${item.q}
-            </div>
-            <div class="answer-text">
-                <span class="answer-label">${translations[currentLang].answer_label || 'Ответ:'}</span><br>
-                ${item.a.replace(/\n/g, '<br>')}
+        html += `
+            <div class="question-block ${currentModeHeight === 'exam' ? '' : 'revealed'}"
+                 onclick="toggleAnswerHeight(this)">
+                <div class="question-text">
+                    <span class="question-number">${idx + 1}</span>
+                    ${item.q}
+                </div>
+                <div class="answer-text">
+                    <span class="answer-label">Ответ:</span><br>
+                    ${item.a.replace(/\n/g, '<br>')}
+                </div>
             </div>
         `;
-
-        block.addEventListener('click', () => {
-            if (currentModeHeight === 'exam') {
-                block.classList.toggle('revealed');
-            }
-        });
-
-        container.appendChild(block);
     });
 
-    document.getElementById('currentTicketInfoHeight').textContent = 
-        `${translations[currentLang].ticket} ${ticketNum}`;
+    document.getElementById('ticketQuestionsHeight').innerHTML = html;
 
+    // Показываем блок с вопросами
     document.getElementById('ticketContentHeight').style.display = 'block';
     document.getElementById('ticketsListHeight').style.display = 'none';
-    document.getElementById('ticketLinksHeight').style.display = 'block';
 
+    // Обновляем состояние кнопок
+    document.getElementById('prevBtnHeight').disabled = ticketNum <= 1;
+    document.getElementById('nextBtnHeight').disabled = ticketNum >= 12;
+
+    // Отмечаем как просмотренный
     viewedTicketsHeight.add(ticketNum);
     updateProgressHeight();
 }
 
-
-function updateHeightNavButtons(ticketNum) {
-    document.getElementById('prevBtnHeight').disabled = ticketNum <= 1;
-    document.getElementById('nextBtnHeight').disabled = ticketNum >= 12;
-}
-
 function prevTicketHeight() {
     if (currentHeightTicket > 1) {
-        showHeightTicket(currentHeightTicket - 1);
+        showTicketHeight(currentHeightTicket - 1);
     }
 }
 
 function nextTicketHeight() {
     if (currentHeightTicket < 12) {
-        showHeightTicket(currentHeightTicket + 1);
+        showTicketHeight(currentHeightTicket + 1);
     }
 }
 
 function backToTicketsHeight() {
     document.getElementById('ticketContentHeight').style.display = 'none';
     document.getElementById('ticketsListHeight').style.display = 'grid';
+    
+    // ←←← Скрываем круглые кнопки когда возвращаемся к списку
     document.getElementById('ticketLinksHeight').style.display = 'none';
 }
 
