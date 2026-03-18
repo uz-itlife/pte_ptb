@@ -411,6 +411,70 @@
             border-color: #2ecc71;
         }
 
+
+        .footer {
+    padding: 30px;
+    }
+
+    
+.sources {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #cee4e6;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    font-size: 0.94em;
+    color: #374151;
+}
+
+.sources::before {
+    content: "📘";
+    font-size: 1.4em;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.sources strong {
+    color: #111827;
+    font-weight: 700;
+    font-size: 1.1em;
+    /* margin-bottom: 14px; */
+    display: block;
+}
+
+.sources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sources li {
+    margin: 10px 0;
+}
+
+.sources a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.18s ease;
+}
+
+.sources a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+    transform: translateX(4px);
+    display: inline-block;
+}
+
+/* Для мобильных — чуть компактнее */
+@media (max-width: 600px) {
+    .sources {
+        padding: 14px 16px;
+        font-size: 0.88em;
+    }
+}
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -490,7 +554,7 @@
             <div class="mode-selector">
                 <button class="mode-btn active" onclick="setModeHeight('study')" data-i18n="mode_study">📚 Режим обучения</button>
                 <button class="mode-btn" onclick="setModeHeight('exam')" data-i18n="mode_exam">📝 Режим экзамена</button>
-                <a target="_blank" href="./1890.pdf">Приказ министра труда</a>
+                
             </div>
             
             <div class="progress-bar">
@@ -564,8 +628,23 @@
                 <div class="ticket-links-title" data-i18n="goto_ticket">Перейти к билету:</div>
                 <div class="ticket-links-grid" id="ticketLinksGridPTE"></div>
             </div>
+
+            <div class="footer">
+    <div class="sources" style="margin-top: 20px; font-size: 0.9em; color: #555;">
+    <strong>Источники нормативных актов:</strong><br>
+    • <a href="https://lex.uz/docs/772773" target="_blank" rel="noopener noreferrer">ПТЭ электроустановок потребителей (редакция 2004 г.)</a><br>
+    • <a href="https://lex.uz/docs/789825" target="_blank" rel="noopener noreferrer">ПТБ при эксплуатации электроустановок потребителей (редакция 2004 г.)</a><br>
+    • <a href="https://lex.uz/docs/5091758" target="_blank" rel="noopener noreferrer">Правила технической эксплуатации и техники безопасности (редакция 2020 г.)</a><br>
+    • <a href="https://lex.uz/docs/1433207#1433238" target="_blank" rel="noopener noreferrer">Правила по охране труда работе на высоте (редакция 2009 г.)</a>
+</div>
+   </div>
+
+            
         </div>
     </div>
+
+   
+   
 
     <script>
         // ==================== ДАННЫЕ ПТЭ ====================
@@ -3180,6 +3259,10 @@ function updateTicketLinksHeight() {
 
 
                     // ==================== ФУНКЦИИ ПТЭ ====================
+
+  
+
+
         
         function renderTicketsListPTE() {
             const container = document.getElementById('ticketsListPTE');
@@ -3520,6 +3603,8 @@ function backToTicketsHeight() {
     // ←←← Скрываем круглые кнопки когда возвращаемся к списку
     document.getElementById('ticketLinksHeight').style.display = 'none';
 }
+
+
 
 // Переменная для текущего билета
 let currentHeightTicket = 1;
